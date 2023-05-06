@@ -24,6 +24,10 @@ h1{
 
 
 /*------- HEADER --------*/
+.navbar-nav{
+    width: 400px;
+    justify-content:space-between;
+}
 
 .navbar-nav li a{
     font-family:Merriweather Sans, sans-serif;
@@ -1102,6 +1106,10 @@ main{
         width: 350px;
     }
     
+    .navbar-nav{
+        width: 200px;
+        justify-content:space-between;
+    }
 }
 
 @media screen and (max-width: 450px) {
