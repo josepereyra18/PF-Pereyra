@@ -36,50 +36,53 @@ h1{
 }
 
 /*------- MAIN --------*/
+main{
+    background-color: white;
+}
+
 /**-----INDEX------**/
 
 /**---HERO INDEX---*/
 .hero{
-    background-image: url(../img/fondo8.jpg);
+    background-image: url(../img/fondo10.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: bottom ;
-    height: 92vh;
+    height: 90vh;
     background-attachment:scroll;
     background-color: black;
 }
 
 .hero div{
+    color: aliceblue;
     font-family: Merriweather Sans, sans-serif;
+    padding: 75px;
 }
 
 
 .hero div li a{
-    color: #cef3ff;
-    background-color: #cef3ff72;
+    color: #5f6cdc;
+    background-color: aliceblue;
     border-radius: 30px;
-    padding: 10px;
-    font-size: 19px;
+    padding: 20px;
+    font-size: 25px;
+
+}
+.hero li{
+    list-style: none;
+    padding-top: 54px;
+    padding-left: 182px;
 }
 
 .hero div h2{
-    padding: 20px;
     font-size: 50px;
+    width: 750px;
 }
 
 .hero div p{
     font-size: 25px;
-    margin: 30px;
-    width: 700px;
+    width: 750px;
 }
-
-.hero div img{
-    padding: 10px;
-    width: 200px;
-}
-
-
-
 
 /**---HERO CONTACTO----**/
 
@@ -157,9 +160,6 @@ h1{
 }
 
 /**---INDEX-INFORMACION---*/
-main{
-    background-color: aliceblue;
-}
 
 .informacion{
 
@@ -252,8 +252,7 @@ main{
 .contener{
     width: fit-content;
     border-radius: 30px;
-    background-color: aliceblue;
-    box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;
+    box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -273,18 +272,20 @@ main{
     text-align: center;
     font-family:Merriweather Sans, sans-serif;
     font-weight: 600;
+    width: 870px;
     font-style:italic;
 }
 
 .personal div div h4{
     width: 150px;
     padding: 5px;
-    background-color:#cef3ff;
+    background-color:#5f6cdc;
     border-radius: 30px;
-    box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;;
+    box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
     font-family:Merriweather Sans, sans-serif ;
     font-weight: 600;
     font-size: 15px;
+    color: aliceblue;
 
 }
 
@@ -298,8 +299,26 @@ main{
 
 
 
+/**---INDEX-IMAGENES---*/
 
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
+.imagenes h2{
+    font-family:Merriweather Sans, sans-serif;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+
+#carouselExampleCaptions{
+    width: 800px;
+}
 
 
 /**------CONOCENOS-------**/
@@ -396,7 +415,7 @@ main{
 
 /*------- FOOTER --------*/
 .footer{
-    background-color: #071523;
+    background-color: #0b0b0b;
     padding: 10px;
 }
 .footer_contenedor{
@@ -497,8 +516,38 @@ main{
 
 /*--------MEDIA---------*/
 
+@media screen and (max-width: 1200px) {
+    .hero div{
+        color: aliceblue;
+        font-family: Merriweather Sans, sans-serif;
+        padding: 35px;
+    }
+}
+
 @media screen and (max-width: 1135px) {
     
+    .hero div{
+        color: aliceblue;
+        font-family: Merriweather Sans, sans-serif;
+        padding: 50px;
+    }
+
+    .hero div h2{
+        font-size: 50px;
+        width: 600px;
+    }
+    
+    .hero div p{
+        font-size: 20px;
+        width: 530px;
+    }
+
+    .hero li{
+        list-style: none;
+        padding-top: 54px;
+        padding-left: 50px;
+    }
+
     .informacion div iframe{
         padding: 28px;
         width: 500px;
@@ -507,21 +556,13 @@ main{
     
 }
 
-
-@media screen and (max-width: 1032px) {
-
-}
-
-
-
 @media screen and (max-width: 1000px) {
-    
 
+    
     .contener{
         width: fit-content;
         border-radius: 30px;
-        background-color: aliceblue;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;
+        box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
         flex-wrap: wrap;
         display: flex;
         flex-direction: row;
@@ -539,9 +580,9 @@ main{
     .personal div div h4{
         width: 150px;
         padding: 10px;
-        background-color:#cef3ff;
+        background-color:#5f6cdc;
         border-radius: 30px;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;;
+        box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
         font-family:Merriweather Sans, sans-serif ;
         font-weight: 600;
         font-size: 11px;
@@ -560,7 +601,6 @@ main{
         justify-content:center;
         flex-wrap: wrap;
     }
-
     
 }
 
@@ -576,7 +616,20 @@ main{
         color: rgba(0, 0, 0, 0.436);
         font-size: 15px;
     }
+    #carouselExampleCaptions{
+        width: 650px;
+    }
+
+    .personal h2{
+        padding: 20px;
+        text-align: center;
+        font-family:Merriweather Sans, sans-serif;
+        font-weight: 600;
+        width: 730px;
+        font-style:italic;
+    }
 }
+
 
 @media screen and (max-width: 800px) {
     .informacion{
@@ -622,8 +675,7 @@ main{
     .contener{
         width: fit-content;
         border-radius: 30px;
-        background-color: aliceblue;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;
+        box-shadow:rgb(97 108 213 / 21%) 0px 3px 8px;
         flex-wrap: wrap;
         display: flex;
         flex-direction: row;
@@ -648,21 +700,20 @@ main{
     .personal div div h4{
         width: 100px;
         padding: 5px;
-        background-color:#cef3ff;
+        background-color:#5f6cdc;
         border-radius: 30px;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;;
+        box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
         font-family:Merriweather Sans, sans-serif ;
         font-weight: 600;
         font-size: 9px;
+        color: aliceblue;
     
     }
 
     .footer{
-        background-color: #0e3881;
         padding: 10px;
     }
     .footer_contenedor{
-        color: #cef3ff;
         height: 32vh;
         display: flex;
         justify-content: space-around;
@@ -742,17 +793,44 @@ main{
         font-size: 10px;
         color: aliceblue;
     }
+
     
+    .hero div p{
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .hero li{
+        list-style: none;
+        padding-top: 54px;
+        padding-left: 0px;
+    }
+
+    .hero{
+        background-image: url(../img/fondo10.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: right ;
+        height: 90vh;
+        background-attachment:scroll;
+        background-color: black;
+    }
     
-    
-    
+    .hero div li a{
+        color: #5f6cdc;
+        background-color: aliceblue;
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 25px;
+        box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
+    }
+
 }
 
 
 @media screen and (max-width: 750px) {
 
     .footer{
-        background-color: #0e3881;
         padding: 10px;
     }
     .footer_contenedor{
@@ -841,6 +919,14 @@ main{
         color: aliceblue;
     }
     
+    .personal h2{
+        padding: 20px;
+        text-align: center;
+        font-family:Merriweather Sans, sans-serif;
+        font-weight: 600;
+        width: 550px;
+        font-style:italic;
+    }
     
 }
 
@@ -857,6 +943,50 @@ main{
         width: 400px;
     }
 
+    .hero div{
+        color: aliceblue;
+        font-family: Merriweather Sans, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        height: 90vh;
+    }
+
+    .hero div p{
+        font-size: 20px;
+        width: 400px;
+        text-align: center;
+        color: #f1f8fe82;
+    }
+
+    .hero div h2{
+        font-size: 50px;
+        width: 480px;
+        text-align: center;
+    }
+
+    .hero li{
+        list-style: none;
+        padding-top: 54px;
+        padding-left: 0px;
+    }
+
+    .hero{
+        background-image: url(../img/fondo10.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: left ;
+        height: 90vh;
+        background-attachment:scroll;
+        background-color: black;
+    }
+
+    #carouselExampleCaptions{
+        width: 490px;
+    }
+    
 
 }
 @media screen and (max-width: 600px) {
@@ -876,19 +1006,19 @@ main{
     .personal div div h4{
         width: 100px;
         padding: 10px;
-        background-color:#cef3ff;
+        background-color:#5f6cdc;
         border-radius: 30px;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;;
+        box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
         font-family:Merriweather Sans, sans-serif ;
         font-weight: 600;
         font-size: 13px;
         margin: -25px;
+        color: aliceblue;
     }
     .contener {
         width: fit-content;
         border-radius: 30px;
-        background-color: aliceblue;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;
+        box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
         flex-wrap: wrap;
         display: flex;
         flex-direction: row;
@@ -903,6 +1033,15 @@ main{
         width: 140px;
         border-radius: 100%;
         padding: 0px;
+    }
+
+    .personal h2{
+        padding: 20px;
+        text-align: center;
+        font-family:Merriweather Sans, sans-serif;
+        font-weight: 600;
+        width: 400px;
+        font-style:italic;
     }
 }
 
@@ -934,6 +1073,34 @@ main{
     .redes a img{
         width: 25px;
     }
+
+    
+    .hero div p{
+        font-size: 18px;
+        width: 320px;
+        text-align: center;
+        color: #f1f8fe82;
+    }
+
+    .hero div h2{
+        font-size: 35px;
+        width: 360px;
+        text-align: center;
+    }
+
+    .hero div li a {
+        color: #5f6cdc;
+        background-color: aliceblue;
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 18px;
+        box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
+    }
+
+    
+    #carouselExampleCaptions{
+        width: 350px;
+    }
     
 }
 
@@ -941,8 +1108,7 @@ main{
     .contener {
         width: fit-content;
         border-radius: 30px;
-        background-color: aliceblue;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;
+        box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
@@ -966,13 +1132,14 @@ main{
     .personal div div h4{
         width: 100px;
         padding: 10px;
-        background-color:#cef3ff;
+        background-color:#5f6cdc;
         border-radius: 30px;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;;
+        box-shadow: rgb(97 108 213 / 21%) 0px 3px 8px;
         font-family:Merriweather Sans, sans-serif ;
         font-weight: 600;
         font-size: 13px;
         margin: 0px;
+        color: aliceblue;
     }
 
     .personal div div {
@@ -995,6 +1162,10 @@ main{
         margin: 0px;
         padding: 5px;
     }
+
+    #carouselExampleCaptions{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1006,17 +1177,6 @@ main{
         padding: 5px;
     }
 
-    .hero div h2{
-        font-size: 35px;
-        width: 350px;
-        padding: 0px;
-    }
-    
-    .hero div p{
-        font-size: 15px;
-        margin: 0px;
-        width: 350px;
-    }
 
     .footer_contenedor{
         color: #cef3ff;
@@ -1029,7 +1189,6 @@ main{
     }
 
     .footer{
-        background-color: #0e3881;
         padding: 10px;
     }
     
@@ -1149,8 +1308,7 @@ main{
     .contener {
         width: fit-content;
         border-radius: 30px;
-        background-color: aliceblue;
-        box-shadow: rgba(67, 35, 35, 0.24) 0px 3px 8px;
+        box-shadow:rgb(97 108 213 / 21%) 0px 3px 8px;
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
@@ -1198,6 +1356,37 @@ main{
         font-style: normal;
         font-size: 30px;
         text-align: center;
+    }
+
+    .hero div p{
+        font-size: 15px;
+        width: 225px;
+        text-align: center;
+        color: #f1f8fe82;
+    }
+
+    .hero div h2{
+        font-size: 26px;
+        width: 280px;
+        text-align: center;
+    }
+
+    .hero div li a {
+        color: #5f6cdc;
+        background-color: aliceblue;
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 18px;
+        box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
+    }
+
+    .personal h2{
+        padding: 0px;
+        text-align: center;
+        font-family:Merriweather Sans, sans-serif;
+        font-weight: 600;
+        width: 250px;
+        font-style:italic;
     }
 }
 

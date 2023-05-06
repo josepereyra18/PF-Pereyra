@@ -14,15 +14,17 @@
 
 <body>
     <header class="header sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:  #293570" >
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0b0b0b">
             <div class="container">
-                <a class="navbar-brand" href="./index.html"><h1>Starfleet Academy</h1></a>
+                <a class="navbar-brand" href="./index.html">
+                    <h1>Starfleet Academy</h1>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end "  id="navbarNavDropdown">
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
                     <ul class="navbar-nav" style="width: 400px; justify-content:space-between ;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
@@ -47,9 +49,10 @@
     <main>
         <section class="hero">
             <div class="hero_flex_contenedor">
-                <h2 class="hero_fraseuno">Exploradooores desde hace 500 años</h2>
-                <p class="hero_frasedos"> Para ir a donde nunaca nadie ha ido. </p>
-                <li><a href="./pages/unete.html" target="_blank">¡Inscibete!</a></li>
+                <h2 class="hero_fraseuno">Exploradores desde hace 500 años</h2>
+                <p class="hero_frasedos"> Unete a Starfleet Academy para poder explorar cada rincon de la galaxia, e ir
+                    a donde nunca nadie ha ido.</p>
+                <li><a href="./pages/unete.html" target="_blank">Inscribete</a></li>
             </div>
         </section>
 
@@ -100,9 +103,52 @@
                     <h4> Teniente de lingüística Nyota Uhura</h4>
                 </div>
             </div>
-
-
         </section>
+        <section class="imagenes">
+            <h2>Conoce mas sobre nuestras instalaciones</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/carrusel9.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Simulacro de reactor en el sector de Ingenieria</h5>
+                            <p>Con nuestra tecnologia en simulaacion de ultima generacion, para brindar la experiencia mas ceracana a la realidad posible.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carrusel6.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pasantias</h5>
+                            <p>Tercer año. Estacion espacial Voyager.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carrusel10.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ceremonia de graduacion</h5>
+                            <p>Egreso de los estudiantes y juramento a la Prime Directive.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
     </main>
 
     <footer class="footer">
