@@ -65,16 +65,25 @@ main{
 
 
 .hero div li a{
-    color: #5f6cdc;
-    background-color: aliceblue;
+    color: aliceblue;
+    background-color: #5f6cdc;
     border-radius: 30px;
     padding: 20px;
     font-size: 25px;
-
+    transition: 0.2s;
 }
+
+.hero div li a:hover{
+    color: #5f6cdc;
+    background-color: aliceblue;
+    padding: 21px;
+    font-size: 26px;
+    border-radius: 31px;
+}
+
 .hero li{
     list-style: none;
-    padding-top: 54px;
+    padding-top: 20px;
     padding-left: 182px;
 }
 
@@ -85,13 +94,13 @@ main{
 
 .hero div p{
     font-size: 25px;
-    width: 750px;
+    width: 600px;
 }
 
 /**---HERO CONTACTO----**/
 
 .hero_contacto{
-    background-image: url(../img/comunicate.jpg);
+    background-image: url(../img/galeri12.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center ;
@@ -107,12 +116,11 @@ main{
 }
 
 .hero_contacto h2{
-    font-size: 60px;
+    font-size: 50px;
 }
 .hero_contacto p{
-    font-size: 30px;
+    font-size: 25px;
 }
-
 
 
 /**------HERO CONOCENOS------**/
@@ -120,7 +128,7 @@ main{
 
 
 .hero_conocenos{
-    background-image: url(../img/conocenos.jpg);
+    background-image: url(../img/galeri15.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: top ;
@@ -147,8 +155,9 @@ main{
 
 /**-----HERO-UNETE**/
 
+
 .hero_unete{
-    background-image: url(../img/Unete.jpg);
+    background-image: url(../img/galeri2.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: top ;
@@ -161,6 +170,10 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.hero_unete h2{
+    font-size: 50px;
 }
 
 /**---INDEX-INFORMACION---*/
@@ -290,7 +303,16 @@ main{
     font-weight: 600;
     font-size: 15px;
     color: aliceblue;
+    transition: 0.2s;
+}
 
+.personal div div h4:hover{
+    width: 155px;
+    padding: 6px;
+    background-color: aliceblue;
+    border-radius: 31px;
+    font-size: 16px;
+    color: #5f6cdc;
 }
 
 .linea {
@@ -329,36 +351,75 @@ main{
 
 
 /**-----CONOCENOS-NOSOTROS-----**/
-
-.nosotros{
-    font-family:Merriweather Sans, sans-serif ;
+.acordeon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.nosotros_pregunta_uno h2{
-    font-weight: 600;
-    font-size: 35px;
-    padding: 10px;
-}
-
-.nosotros div p{
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.536);
-    font-size: 20px;
-}
-
-.nosotros div h3{
-    font-weight: 500;
-    font-size: 30px;
-    padding: 10px;
-}
-
-.nosotros div{
+.accordion{
     padding: 30px;
+    width: 70%;
 }
 
+.galeria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 30px;
+    grid-template-areas:
+    "foto3 foto3 foto1"
+    "foto3 foto3 foto2"
+    "foto5 foto6 foto4"
+    "foto7 foto9 foto4"
+    "foto8 foto8 foto8"
+    "foto8 foto8 foto8";
+}
 
+.galeria img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow:  rgb(31 37 96 / 48%) 0px 3px 8px;
+    object-fit: cover ;
+}
+.grid-item{
+    position: relative;
+}
+.foto1{
+    grid-area: foto1;
+}
+.foto2{
+    grid-area: foto2;
+}
+.foto4{
+    grid-row: span 2;
+    grid-area: foto4;
+}
 
-
-
+.foto3{
+    grid-row: span 2;
+    grid-column: span 2;
+    grid-area: foto3;
+}
+.foto5{
+    grid-area: foto5;
+}
+.foto6{
+    grid-area: foto6;
+}
+foto7{
+    grid-area: foto7;
+}
+.foto8{
+    grid-row: span 3;
+    grid-column: span 3;
+    grid-area: foto8;
+}
+.foto9{
+    grid-area: foto9;
+}
 
 
 /**-----CONTACTANOS-----**/
@@ -369,8 +430,21 @@ main{
 .contacto_contenido{
     font-family:Merriweather Sans, sans-serif ;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
 }
+.contacto_contenido_arriba{
+    display: flex;
+}
+
 .contacto_contenido_numeros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 50vh;
 }
 .contacto_contenido_numeros p{
@@ -380,42 +454,166 @@ main{
 .contacto_contenido_numeros h3{
     color: rgba(0, 0, 0, 0.859);
 }
-.contacto_contenido_formulario h3{
+.contacto_contenido_formulario h4{
     color: rgba(0, 0, 0, 0.859);
 }
-.contacto_contenido div iframe{
+
+.contacto_contenido_localizacion iframe{
     width: 200px;
     height:200px ;
 }
+.contacto_contenido_localizacion p{
+    color: rgba(0, 0, 0, 0.496);
+}
 .contacto_contenido div{
-    padding: 30px;
+    padding: 15px;
+    width: fit-content;
+}
+
+.contenido_formulario div{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
 
 /**-----UNETE-CONTENIDO_UNETE-----**/
+.incripcion_info{
+    padding: 20px;
+}
+
 .contenido_unete{
     font-family:Merriweather Sans, sans-serif ;
     margin: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contenido_unete h2{
     font-weight: 600;
     font-size: 35px;
-    padding: 10px;
+    padding: 34px;
+    color: #0b0b0b;
 }
 .contenido_unete p {
     font-weight: 300;
     color: rgba(0, 0, 0, 0.536);
     font-size: 20px;
+    text-align: justify;
 }
 
-.contenido_unete div {
-    padding: 30px;
+.unete_contenedor{
+    background-color: #5f6cdc;
+    width: fit-content;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.unete_contenedor div{
+    padding: 10px;
+}
+
+.unete_contenedor h3{
+    color: aliceblue;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+}
+
+.formulario_unete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+.for-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nyp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nyp div{
+    display: flex;
+    flex-direction: column;
+}
+
+.naciemiento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.naciemiento div{
+    display: flex;
+    flex-direction: column;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
 }
 
 
+.especie_sexo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.especie_sexo div{
+    display: flex;
+    flex-direction: column;
+}
 
+.datos_adicionales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.datos_adicionales div{
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar{
+    background-color: #5f6cdc;
+    color: aliceblue;
+    border-radius: 30px;
+    width: 80px;
+    padding: 10px;
+}
+
+label{
+    color: aliceblue;
+}
+
+input{
+    border: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    height: 30px;
+}
+
+.especie_sexo div select{
+    width: 200px;
+}
+
+.naciemiento div select{
+    width: 95px;
+}
+
+select{
+    border-radius: 5px;
+    height: 30px;
+}
 
 /*------- FOOTER --------*/
 .footer{
@@ -469,21 +667,37 @@ main{
     border-radius: 20px;
     width: fit-content;
     padding: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.susbribir:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #5f6cdc;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px;
+    font-size: 15px;
+    color: aliceblue;
 }
 
 .redes{
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    width: 30px;
+    width: 270px;
     justify-content: space-around;
     align-items: center;
 }
-.redes a{
-    padding: 10px;
-}
+
 .redes a img{
     width: 25px;
+    transition: 0.2s;
 }
+.redes a img:hover{
+    width: 28px;
+}
+
 .watermark{
     display: flex;
     flex-direction: column;
@@ -516,8 +730,6 @@ main{
 }
 
 
-
-
 /*--------MEDIA---------*/
 
 @media screen and (max-width: 1200px) {
@@ -526,6 +738,10 @@ main{
         font-family: Merriweather Sans, sans-serif;
         padding: 35px;
     }
+
+    /*------contacto------*/
+    /*------conocenos------*/
+    /*------Unete------*/
 }
 
 @media screen and (max-width: 1135px) {
@@ -557,7 +773,14 @@ main{
         width: 500px;
     }
 
-    
+    /*------contacto------*/
+    .hero_contacto p{
+        font-size: 20px;
+    }
+
+    /*------conocenos------*/
+    /*------Unete------*/
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -592,6 +815,18 @@ main{
         font-size: 11px;
     
     }
+
+    .personal div div h4:hover{
+        width: 160px;
+        padding: 11px;
+        background-color: aliceblue;
+        border-radius: 31px;
+        font-size: 12px;
+        color: #5f6cdc;
+    }
+
+
+    
     
     .personal div div{
         text-align: center;
@@ -605,7 +840,10 @@ main{
         justify-content:center;
         flex-wrap: wrap;
     }
-    
+
+    /*------contacto------*/
+    /*------conocenos------*/
+    /*------Unete------*/
 }
 
 @media screen and (max-width: 967px) {
@@ -632,8 +870,54 @@ main{
         width: 730px;
         font-style:italic;
     }
+
+    /*------contacto------*/
+    /*------conocenos------*/
+
+    .hero_conocenos p{
+        font-weight: 300;
+        font-size: 25px;
+        width: 630px;
+    }
+
+    .hero_conocenos h4{
+        font-weight: 500;
+        font-size: 55px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    
 }
 
+@media screen and (max-width: 900px) {
+    /*------Contacto------*/
+    /*------Conocenos------*/
+    /*------Unete------*/
+
+    input{
+        border: aliceblue;
+        border-radius: 5px;
+        padding: 10px;
+        height: 30px;
+        width: 180px;
+    }
+    .nyp div input{
+        width: 150px;
+    }
+
+    .año input{
+        width: 150px;
+    }
+    
+    .especie_sexo div select{
+        width: 150px;
+    }
+    
+    .naciemiento div select{
+        width: 60px;
+    }    
+}
 
 @media screen and (max-width: 800px) {
     .informacion{
@@ -714,10 +998,20 @@ main{
     
     }
 
+    .personal div div h4:hover{
+        width: 110px;
+        padding: 6px;
+        background-color: aliceblue;
+        border-radius: 31px;
+        font-size: 10px;
+        color: #5f6cdc;
+    }
+
     .footer{
         padding: 10px;
     }
     .footer_contenedor{
+        color: aliceblue;
         height: 32vh;
         display: flex;
         justify-content: space-around;
@@ -821,13 +1115,17 @@ main{
     }
     
     .hero div li a{
-        color: #5f6cdc;
-        background-color: aliceblue;
+        color: aliceblue;
+        background-color: #5f6cdc;
         border-radius: 30px;
         padding: 20px;
         font-size: 25px;
         box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
     }
+
+    /*------contacto------*/
+    /*------conocenos------*/
+    /*------Unete------*/
 
 }
 
@@ -838,7 +1136,7 @@ main{
         padding: 10px;
     }
     .footer_contenedor{
-        color: #cef3ff;
+        color: aliceblue;
         height: 30vh;
         display: flex;
         justify-content: space-around;
@@ -932,6 +1230,17 @@ main{
         font-style:italic;
     }
     
+    /*------contacto------*/
+    .form-control{
+        width: 400px;
+    }
+
+    /*------conocenos------*/
+    /*------Unete------*/
+
+    .unete_contenedor div {
+        padding: 4px;
+    }    
 }
 
 @media screen and (max-width: 700px) {
@@ -990,7 +1299,52 @@ main{
     #carouselExampleCaptions{
         width: 490px;
     }
-    
+
+    /*------contacto------*/
+    .contacto_contenido_numeros h3{
+        color: rgba(0, 0, 0, 0.859);
+    }
+    .contacto_contenido_formulario h4{
+        color: rgba(0, 0, 0, 0.859);
+        font-size: 20px;
+    }
+
+    .contacto_contenido_arriba{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    }
+    /*------conocenos------*/
+    .galeria{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        padding: 30px;
+        grid-template-areas:
+        "foto1 foto4"
+        "foto2 foto4"
+        "foto3 foto3"
+        "foto3 foto3"
+        "foto5 foto7"
+        "foto6 foto8"
+        "foto6 foto9";
+    }
+
+    .hero_conocenos p{
+        font-weight: 300;
+        font-size: 20px;
+        width: 530px;
+    }
+
+    .hero_conocenos h4{
+        font-weight: 500;
+        font-size: 45px;
+        font-style: italic;
+        text-align: center;
+    }
+    /*------Unete------*/
+
 
 }
 @media screen and (max-width: 600px) {
@@ -1019,6 +1373,17 @@ main{
         margin: -25px;
         color: aliceblue;
     }
+
+    .personal div div h4:hover{
+        width: 110px;
+        padding: 11px;
+        background-color: aliceblue;
+        border-radius: 31px;
+        font-size: 14px;
+        color: #5f6cdc;
+    }
+
+
     .contener {
         width: fit-content;
         border-radius: 30px;
@@ -1047,9 +1412,76 @@ main{
         width: 400px;
         font-style:italic;
     }
+
+    /*------contacto------*/
+    /*------conocenos------*/
+    .galeria{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+    
+
+    .hero_conocenos p{
+        font-weight: 300;
+        font-size: 25px;
+        width: 430px;
+    }
+
+    .hero_conocenos h4{
+        font-weight: 500;
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+    }
+    /*------Unete------*/
+
+    .contenido_unete h2 {
+        font-weight: 600;
+        font-size: 30px;
+        padding: 34px;
+        color: #0b0b0b;
+    }
+
+    .formulario_unete{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+    
+    }
+
+    .unete_contenedor h3 {
+        color: aliceblue;
+        width: 387px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
+    .watermark{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .watermark img{
+        width: 65px;
+    }
+
+    .watermark h4{
+        font-family: Inconsolata;
+        font-weight: 600;
+        font-size: 10px;
+    }
+
     .informacion div img{
         border-radius: 30px;
         width: 350px;
@@ -1067,7 +1499,7 @@ main{
     .redes{
         padding: 10px;
         display: flex;
-        width: 30px;
+        width: 270px;
         justify-content: space-around;
         align-items: center;
     }
@@ -1110,6 +1542,55 @@ main{
         width: 200px;
         justify-content:space-between;
     }
+
+    /*------contacto------*/
+    .hero_contacto h2{
+        font-size: 35px;
+    }
+    .hero_contacto p{
+        font-size: 18px;
+    }
+    .form-control{
+        width: 350px;
+    }
+
+    /*------conocenos------*/
+
+    .galeria{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+        padding: 30px;
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
+        "foto7"
+        "foto8"
+        "foto9";
+    }
+    
+
+    .hero_conocenos p{
+        font-weight: 400;
+        font-size: 15px;
+        width: 330px;
+    }
+
+    .hero_conocenos h4{
+        font-weight: 500;
+        font-size: 30px;
+        font-style: italic;
+        text-align: center;
+    }
+    /*------Unete------*/
+    .hero_unete h2{
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1150,6 +1631,16 @@ main{
         color: aliceblue;
     }
 
+    .personal div div h4:hover{
+        width: 110px;
+        padding: 11px;
+        background-color: aliceblue;
+        border-radius: 31px;
+        font-size: 14px;
+        color: #5f6cdc;
+    }
+
+
     .personal div div {
         text-align: center;
         width: 250px;
@@ -1174,6 +1665,22 @@ main{
     #carouselExampleCaptions{
         width: 300px;
     }
+
+
+    /*------contacto------*/
+
+    .form-control{
+        width: 300px;
+    }
+    /*------conocenos------*/
+    /*------Unete------*/
+    .unete_contenedor h3 {
+        color: aliceblue;
+        width: 300px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1187,7 +1694,7 @@ main{
 
 
     .footer_contenedor{
-        color: #cef3ff;
+        color: aliceblue;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -1245,7 +1752,7 @@ main{
     .redes{
         padding: 10px;
         display: flex;
-        width: 30px;
+        width: 270px;
         justify-content: space-around;
         align-items: center;
     }
@@ -1296,6 +1803,13 @@ main{
         padding-top: 0px;
         padding-bottom: 20px;
     }
+
+    /*------contacto------*/
+    .form-control{
+        width: 300px;
+    }
+    /*------conocenos------*/
+    /*------Unete------*/
 
 }
 
@@ -1396,7 +1910,86 @@ main{
         width: 250px;
         font-style:italic;
     }
+
+    /*------contacto------*/
+    .hero_contacto h2{
+        font-size: 26px;
+    }
+    .hero_contacto p{
+        font-size: 15px;
+    }
+
+    .contacto_contenido div {
+        padding: 5px;
+        width: fit-content;
+    }
+    /*------conocenos------*/
+    .galeria{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+    
+
+    .hero_conocenos p{
+        font-weight: 400;
+        font-size: 15px;
+        width: 230px;
+    }
+
+    .hero_conocenos h4{
+        font-weight: 500;
+        font-size: 25px;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    /*------Unete------*/
+
+    .contenido_unete h2 {
+        font-weight: 600;
+        font-size: 25px;
+        padding: 34px;
+        color: #0b0b0b;
+        width: 255px;
+    }
+
+    .nyp div input {
+        width: 125px;
+    }
+    .naciemiento div select {
+        width: 60px;
+    }
+    .año input {
+        width: 122px;
+    }
+    input {
+        border: aliceblue;
+        border-radius: 5px;
+        padding: 10px;
+        height: 30px;
+        width: 180px;
+    }
+    .especie_sexo div select {
+        width: 126px;
+    }
+    .unete_contenedor {
+        background-color: #5f6cdc;
+        width: fit-content;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .hero_unete h2{
+        font-size: 26px;
+    }
 }
+
 
 @media screen and (max-width: 350px) {
     
@@ -1410,6 +2003,30 @@ main{
     .informacion div iframe{
         padding: 25px;
         width: 250px;
+    }
+
+    /*------contacto------*/
+    .form-control {
+        width: 250px;
+    }
+    /*------conocenos------*/
+    /*------Unete------*/
+    .unete_contenedor h3 {
+        color: aliceblue;
+        width: 276px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .nyp div input {
+        width: 110px;
+    }
+    .año input {
+        width: 95px;
+    }
+
+    .especie_sexo div select {
+        width: 100px;
     }
 
 }
