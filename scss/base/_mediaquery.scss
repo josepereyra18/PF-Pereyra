@@ -1,0 +1,1548 @@
+@media screen and (max-width: 1200px) {
+    .hero{
+        div{
+            color: $color-tercero;
+            font-family: Merriweather Sans, sans-serif;
+            padding: 35px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1135px) {
+    .hero{
+        div{
+            color: $color-tercero;
+            font-family: Merriweather Sans, sans-serif;
+            padding: 50px;
+
+            h2{
+                font-size: 50px;
+                width: 600px;
+            }
+            p{
+                font-size: 20px;
+                width: 530px;
+            }
+            li{
+                list-style: none;
+                padding-top: 54px;
+                padding-left: 50px;
+            }
+        }   
+    }
+
+.informacion{
+    .video{
+        iframe{
+            padding: 28px;
+            width: 500px;
+        }
+    }
+}
+
+    /*------contacto------*/
+
+.hero_contacto{
+    h2{
+        font-size: 20px;
+    }
+}
+
+    /*------conocenos------*/
+    /*------Unete------*/
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .personal{
+        .contener{
+            width: fit-content;
+            border-radius: 30px;
+            
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+            div{
+                text-align: center;
+                width: 150px;
+                height: 150px;
+                margin: 20px;
+                border-radius: 45px;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+                flex-wrap: wrap;
+                img{
+                    width: 91px;
+                    border-radius: 100%;
+                    padding: 10px;
+                }
+                h4{
+                    width: 150px;
+                    padding: 10px;
+                    background-color:$color-principal;
+                    border-radius: 15px;
+                    font-family:Merriweather Sans, sans-serif ;
+                    font-weight: 600;
+                    font-size: 11px;
+                    &:hover{
+                        width: 160px;
+                        padding: 11px;
+                        background-color: $color-tercero;
+                        border-radius: 31px;
+                        font-size: 12px;
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------contacto------*/
+    /*------conocenos------*/
+    /*------Unete------*/
+}
+
+
+@media screen and (max-width: 967px) {
+    
+    .informacion{
+        .informacion_introduccion{
+            .informacion_introduccion_imagen_descripcion{
+                font-style: normal;
+                color: rgba(0, 0, 0, 0.436);
+                font-size: 15px;
+            }
+        }
+        .video{
+            iframe{
+                padding: 28px;
+                width: 400px;
+            }
+        }
+    }
+
+
+    .personal{
+        h2{
+            padding: 20px;
+            text-align: center;
+            font-family:Merriweather Sans, sans-serif;
+            font-weight: 600;
+            width: 730px;
+
+        }
+    }
+
+
+
+    .imagenes{
+        #carouselExampleCaptions{
+            width: 650px;
+        }
+    }
+
+    /*------contacto------*/
+    /*------conocenos------*/
+
+    .hero_conocenos{
+        p{
+            font-weight: 300;
+            font-size: 25px;
+            width: 630px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 55px;
+
+            text-align: center;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    /*------Contacto------*/
+    /*------Conocenos------*/
+    /*------Unete------*/
+    .contenido_unete{
+        font-family:Merriweather Sans, sans-serif ;
+        margin: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .incripcion_info{
+            padding: 20px;
+            h2{
+                font-weight: 600;
+                font-size: 35px;
+                padding: 34px;
+                color: $color-secundario;
+            }
+            p{
+                font-weight: 300;
+                color: rgba(0, 0, 0, 0.536);
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+        .unete_contenedor{
+            background-color: $color-principal;
+            width: fit-content;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            h3{
+                color: $color-tercero;
+                width: 500px;
+                text-align: center;
+                padding: 10px;
+            }
+            .formulario_unete{
+                .for-1{
+                    .nyp{
+                        div{
+                            input{
+                                width: 150px;
+                            }
+                        }
+                    }
+                    .naciemiento{
+                        div{
+                            select{
+                                width: 60px;
+                            }
+                        }
+                        div{
+                            input{
+                                width: 150px;
+                            }
+                        }
+                    }
+                    .especie_sexo{
+                        div{
+                            select{
+                                width: 150px;
+                            }
+                        }
+                    }
+                    .mail{
+                        input{
+                            border: $color-tercero;
+                            border-radius: 5px;
+                            padding: 10px;
+                            height: 30px;
+                            width: 180px;
+                        }
+                    }
+                }
+                .for-2{
+                    .datos_adicionales{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            label{
+                                color: $color-tercero;
+                            }
+                            input{
+                                border: $color-tercero;
+                                border-radius: 5px;
+                                padding: 10px;
+                                height: 30px;
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+            div{
+                div{
+                    input{
+                        border: $color-tercero;
+                        border-radius: 5px;
+                        padding: 10px;
+                        height: 30px;
+                        width: 180px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .informacion{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: Merriweather Sans, sans-serif;
+        .informacion_introduccion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                border-radius: 60px;
+                width: 600px;
+                margin: 25px;
+            }
+            .informacion_introduccion_imagen_descripcion{
+                font-style: normal;
+                color: rgba(0, 0, 0, 0.436);
+                font-size: 15px;
+                padding-left: 0px;
+            }
+        }
+        .video{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            iframe{
+                padding: 28px;
+                width: 600px;
+            }
+        }
+    }
+
+    .personal{
+        .contener{
+            width: fit-content;
+            border-radius: 30px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+            div{
+                text-align: center;
+                width: 100px;
+                height: 150px;
+                margin: 20px;
+                border-radius: 45px;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+                flex-wrap: wrap;
+                h4{
+                    width: 100px;
+                    padding: 5px;
+                    background-color:$color-principal;
+                    border-radius: 15px;
+                    font-family:Merriweather Sans, sans-serif ;
+                    font-weight: 600;
+                    font-size: 9px;
+                    color: $color-tercero;
+                    &:hover{
+                        width: 110px;
+                        padding: 6px;
+                        background-color: $color-tercero;
+                        border-radius: 31px;
+                        font-size: 10px;
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        .footer_contenedor{
+            height: 32vh;
+            .contactos{
+                .linea_bot{
+                    border-top: 3px solid rgba(187, 187, 187, 0.251);
+                    height: 2px;
+                    width: 50%;
+                    padding: 15px;
+                }
+            }
+            .subscripcion{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 350px;
+                height: 200px;
+                justify-content: space-around;
+                .susbribir{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    background-color: $color-tercero;
+                    border-radius: 20px;
+                    width: fit-content;
+                    padding: 10px;
+                    transition: 0.2s;
+                    &:hover{
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                        background-color: $color-principal;
+                        border-radius: 20px;
+                        width: fit-content;
+                        padding: 10px;
+                        font-size: 15px;
+                        color: $color-tercero;
+                    }
+                }
+                .redes{
+                    padding: 20px;
+                    display: flex;
+                    width: 270px;
+                    justify-content: space-around;
+                    align-items: center;
+                    li{
+                        text-decoration: none;
+                        list-style: none;
+                        a{
+                            img{
+                                width: 25px;
+                                transition: 0.2s;
+                                &:hover{
+                                    width: 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .watermark{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                img{
+                    width: 80px;
+                }
+                h4{
+                    font-family: Inconsolata;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+            }
+            
+        }
+        .derechos{
+            font-family:Merriweather Sans, sans-serif ;
+            text-align: center;
+            font-size: 10px;
+            color: $color-tercero;
+        }
+    }
+
+    .hero{
+        background-image: url(../img/fondo10.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: right ;
+        height: 90vh;
+        background-attachment:scroll;
+        background-color: black;
+        .hero_flex_contenedor{
+            .hero_fraseuno{
+                width: 400px;
+            }
+            .hero_frasedos{
+                font-size: 20px;
+                width: 400px;
+            }
+            li{
+                list-style: none;
+                padding-top: 54px;
+                padding-left: 0px;
+                a{
+                    color: $color-tercero;
+                    background-color: $color-principal;
+                    border-radius: 15px;
+                    padding: 12px;
+                    font-size: 15px;
+                    box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
+                }
+            }
+        }
+    }
+
+    /*------contacto------*/
+    /*------conocenos------*/
+    /*------Unete------*/
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .footer{
+        .footer_contenedor{
+            .contactos{
+                h4{
+                    font-weight: 300;
+                    font-style: initial;
+                    font-size: 12px;
+                    padding: 20px;
+                    text-align: center;
+                }
+                .linea_bot{
+                    padding: 15px;
+                }
+                p{
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 10px;
+                }
+            }
+            .subscripcion{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 350px;
+                height: 200px;
+                justify-content: space-around;
+                h4{
+                    font-weight: 300;
+                    font-style: initial;
+                    padding: 20px;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .susbribir{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    background-color: $color-tercero;
+                    border-radius: 20px;
+                    width: fit-content;
+                    padding: 7px;
+                    font-size: 15px;
+                    transition: 0.2s;
+                    &:hover{
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                        background-color: $color-principal;
+                        border-radius: 20px;
+                        width: fit-content;
+                        padding: 10px;
+                        font-size: 17px;
+                        color: $color-tercero;
+                    }
+                }
+                .redes{
+                    padding: 20px;
+                    display: flex;
+                    width: 270px;
+                    justify-content: space-around;
+                    align-items: center;
+                    li{
+                        text-decoration: none;
+                        list-style: none;
+                        a{
+                            img{
+                                width: 25px;
+                                transition: 0.2s;
+                                &:hover{
+                                    width: 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .watermark{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                img{
+                    width: 80px;
+                }
+                h4{
+                    font-family: Inconsolata;
+                    font-weight: 600;
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+            
+        }
+        .derechos{
+            padding-left:  0px;
+            font-family:Merriweather Sans, sans-serif ;
+            text-align: center;
+            font-size: 10px;
+            color: $color-tercero;
+        }
+    }
+
+    .personal{
+        h2{
+            padding: 20px;
+            text-align: center;
+            font-family:Merriweather Sans, sans-serif;
+            font-weight: 600;
+            width: 550px;
+
+        }
+    }
+
+    /*------contacto------*/
+
+    .contacto_contenido{
+        .contacto_contenido_formulario{
+            .contenido_formulario{
+                div{
+                    form-control{
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+    /*------conocenos------*/
+    /*------Unete------*/
+
+    .contenido_unete{
+        .unete_contenedor{
+            .formulario_unete{
+                padding: 4px;
+            }
+            div{
+                padding: 4px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .informacion{
+        .informacion_introduccion{
+            img{
+                border-radius: 60px;
+                width: 400px;
+                margin: 25px;
+            }
+        }
+        .video{
+            iframe{
+                padding: 28px;
+                width: 400px;
+            }
+        }
+    }
+
+    .hero{
+        background-image: url(../img/fondo10.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: left ;
+        height: 90vh;
+        background-attachment:scroll;
+        background-color: black;
+        .hero_flex_contenedor{
+            color: $color-tercero;
+            font-family: Merriweather Sans, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            height: 90vh;
+            .hero_fraseuno{
+                font-size: 50px;
+                width: 480px;
+                text-align: center;
+            }
+            hero_frasedos{
+                font-size: 20px;
+                width: 400px;
+                text-align: center;
+                color: #f1f8fe82;
+            }
+            li{
+                list-style: none;
+                padding-top: 54px;
+                padding-left: 0px;
+            }
+        }
+    }
+
+    .imagenes{
+        #carouselExampleCaptions{
+            width: 490px;
+        }
+    }
+
+
+    /*------contacto------*/
+    .contacto_contenido{
+        .contacto_contenido_arriba{
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+            .contacto_contenido_numeros{
+                p{
+                    color: rgba(0, 0, 0, 0.859);
+                }
+            }
+        }
+        .contacto_contenido_formulario{
+            h4{
+                font-size: 20px;
+            }
+        }
+}
+
+    /*------conocenos------*/
+
+    .acordeon{
+        .galeria{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            padding: 30px;
+            grid-template-areas:
+            "foto1 foto4"
+            "foto2 foto4"
+            "foto3 foto3"
+            "foto3 foto3"
+            "foto5 foto7"
+            "foto6 foto8"
+            "foto6 foto9";
+        }
+    }
+    .hero_conocenos{
+        p{
+            font-weight: 300;
+            font-size: 20px;
+            width: 530px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 45px;
+
+            text-align: center;
+        }
+    }
+
+    /*------Unete------*/
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .personal{
+        h2{
+            padding: 20px;
+            text-align: center;
+            font-family:Merriweather Sans, sans-serif;
+            font-weight: 600;
+            width: 400px;
+
+        }
+        .contener{
+            width: fit-content;
+            border-radius: 30px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px;
+            padding: 0px;
+            padding-bottom: 40px;
+            div{
+                text-align: center;
+                width: 150px;
+                height: 150px;
+                margin: 20px;
+                border-radius: 45px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                img{
+                    width: 140px;
+                    border-radius: 100%;
+                    padding: 0px;
+                }
+                h4{
+                    width: 100px;
+                    padding: 10px;
+                    background-color:$color-principal;
+                    border-radius: 15px;
+                    font-family:Merriweather Sans, sans-serif ;
+                    font-weight: 600;
+                    font-size: 13px;
+                    margin: -25px;
+                    color: $color-tercero;
+                    &:hover{
+                        width: 110px;
+                        padding: 11px;
+                        background-color: $color-tercero;
+                        border-radius: 31px;
+                        font-size: 14px;
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*------contacto------*/
+    /*------conocenos------*/
+
+    .acordeon{
+        .galeria{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            padding: 30px;
+        }
+    }
+
+    .hero_conocenos{
+        p{
+            font-weight: 300;
+            font-size: 25px;
+            width: 430px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 35px;
+
+            text-align: center;
+        }
+    }
+
+    /*------Unete------*/
+
+    .contenido_unete{
+        .incripcion_info{
+            h2{
+                font-weight: 600;
+                font-size: 30px;
+                padding: 34px;
+                color: $color-secundario;
+            }
+        }
+        .unete_contenedor{
+            h3{
+                color: $color-tercero;
+                width: 387px;
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+            }
+            .formulario_unete{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .footer{
+        .footer_contenedor{
+            .watermark{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                img{
+                    width: 65px;
+                }
+                h4{
+                    font-family: Inconsolata;
+                    font-weight: 600;
+                    font-size: 10px;
+                }
+            }
+            
+        }
+    }
+
+
+
+    .informacion{
+        .informacion_introduccion{
+            img{
+                border-radius: 30px;
+                width: 350px;
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+        .video{
+            iframe{
+                padding: 13px;
+                width: 350px;
+            }
+        }
+    }
+
+    .hero{
+        .hero_flex_contenedor{
+            .hero_fraseuno{
+                font-size: 35px;
+                width: 360px;
+                text-align: center;
+            }
+            .hero_frasedos{
+                font-size: 18px;
+                width: 320px;
+                text-align: center;
+                color: #f1f8fe82;
+            }
+            li{
+                a{
+                    color: $color-principal;
+                    background-color: $color-tercero;
+                    border-radius: 15px;
+                    padding: 12px;
+                    font-size: 18px;
+                    box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
+                }
+            }
+        }
+    }
+
+    .imagenes{
+        #carouselExampleCaptions{
+            width: 350px;
+        }
+    }
+    
+    header{
+        nav{
+            div{
+                div{
+                    ul{
+                        width: 200px;
+                        justify-content:space-between;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------contacto------*/
+
+    .hero_contacto{
+        h2{
+            font-size: 35px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .contacto_contenido{
+        .contacto_contenido_formulario{
+            .contenido_formulario{
+                div{
+                    form-control{
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------conocenos------*/
+    .hero_conocenos{
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            width: 330px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 30px;
+
+            text-align: center;
+        }
+    }
+
+    .acordeon{
+        .galeria{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+            padding: 30px;
+            grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8"
+            "foto9";
+        }
+    }
+
+    /*------Unete------*/
+
+    .hero_unete{
+        h2{
+            font-size: 35px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .footer{
+        padding: 10px;
+        .footer_contenedor{
+            color: $color-tercero;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-family:Merriweather Sans, sans-serif ;
+            .contactos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                order: 2;
+                h4{
+                    font-weight: 300;
+                    font-style: initial;
+                    font-size: 17px;
+                    padding: 20px;
+                }
+                .linea_bot{
+                    border-top: 3px solid rgba(187, 187, 187, 0.251);
+                    height: 2px;
+                    width: 50%;
+                    padding: 10px;
+                }
+                p{
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 15px;
+                }
+            }
+            .subscripcion{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                order: 1;
+                width: auto;
+                h4{
+                    font-weight: 300;
+                    font-style: initial;
+                    padding: 17px;
+                    font-size: 20px;
+                }
+                .susbribir{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    background-color: $color-tercero;
+                    border-radius: 20px;
+                    width: fit-content;
+                    padding: 10px;
+                    transition: 0.2s;
+                }
+                .redes{
+                    padding: 10px;
+                    display: flex;
+                    width: 270px;
+                    justify-content: space-around;
+                    align-items: center;
+                    li{
+                        text-decoration: none;
+                        list-style: none;
+                        a{
+                            padding: 10px;
+                            img{
+                                width: 25px;
+                                transition: 0.2s;
+                                &:hover{
+                                    width: 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .watermark{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                order: 3;
+                img{
+                    width: 100px;
+                }
+                h4{
+                    font-family: Inconsolata;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+            
+        }
+        .derechos{
+            font-family:Merriweather Sans, sans-serif ;
+            text-align: center;
+            font-size: 15px;
+            color: $color-tercero;
+        }
+    }
+
+    .personal{
+        .contener{
+            width: fit-content;
+            border-radius: 30px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px;
+            padding: 0px;
+            padding-bottom: 0px;
+            div{
+                text-align: center;
+                width: 250px;
+                height: 150px;
+                margin: 20px;
+                border-radius: 45px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                img{
+                    width: 140px;
+                    border-radius: 100%;
+                    padding: 0px;
+                }
+                h4{
+                    width: 100px;
+                    padding: 10px;
+                    background-color:$color-principal;
+                    border-radius: 15px;
+                    font-family:Merriweather Sans, sans-serif ;
+                    font-weight: 600;
+                    font-size: 13px;
+                    margin: 0px;
+                    color: $color-tercero;
+                    &:hover{
+                        width: 110px;
+                        padding: 11px;
+                        background-color: $color-tercero;
+                        border-radius: 31px;
+                        font-size: 14px;
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+    .informacion{
+        .informacion_introduccion{
+            p{
+                color: $color-texto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 17px;
+                padding: 28px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom: 20px;
+            }
+            img{
+                border-radius: 30px;
+                width: 300px;
+                margin: 0px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .imagenes{
+        #carouselExampleCaptions{
+            width: 300px;
+        }
+    }
+
+    header{
+        nav{
+            div{
+                .navbar-brand{
+                    h1{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*------contacto------*/
+
+    .contacto_contenido{
+        .contacto_contenido_formulario{
+            .contenido_formulario{
+                div{
+                    form-control{
+                        width: 300px;
+    
+                    }
+                }
+            }
+        }
+    }
+
+    /*------conocenos------*/
+    /*------Unete------*/
+        .contenido_unete{
+            .unete_contenedor{
+                h3{
+                    color: $color-tercero;
+                    width: 300px;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    .informacion{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: Merriweather Sans, sans-serif;
+        .informacion_introduccion{
+            h3{
+                padding: 28px;
+                font-style: normal;
+                font-size: 30px;
+                text-align: center;
+            }
+            p{
+                color: $color-texto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 17px;
+                padding: 28px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom: 20px;
+            }
+            img{
+                border-radius: 30px;
+                width: 290px;
+                margin: 0px;
+                padding: 5px;
+            }
+            .informacion_introduccion_imagen_descripcion{
+                font-style: normal;
+                color: rgba(0, 0, 0, 0.436);
+                font-size: 10px;
+                padding-left: 0px;
+            }
+        }
+        .video{
+            iframe{
+                padding: 25px;
+                width: 290px;
+            }
+        }
+    }
+
+    .personal{
+        h2{
+            padding: 0px;
+            text-align: center;
+            font-family:Merriweather Sans, sans-serif;
+            font-weight: 600;
+            width: 250px;
+
+        }
+        .contener{
+            width: fit-content;
+            border-radius: 30px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 12px;
+            padding: 0px;
+            padding-bottom: 0px;
+        }
+    }
+    .hero{
+        .hero_flex_contenedor{
+            .hero_fraseuno{
+                font-size: 26px;
+                width: 280px;
+                text-align: center;
+            }
+            .hero_frasedos{
+                font-size: 15px;
+                width: 225px;
+                text-align: center;
+                color: #f1f8fe82;
+            }
+            li{
+                a{
+                    color: $color-principal;
+                    background-color: $color-tercero;
+                    border-radius: 15px;
+                    padding: 12px;
+                    font-size: 18px;
+                    box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
+                }
+            }
+        }
+    }
+
+    /*------contacto------*/
+    .hero_contacto{
+        h2{
+            font-size: 26px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    
+
+    .contacto_contenido{
+        .contacto_contenido_arriba{
+            padding: 5px;
+            width: fit-content;
+        }
+        .contacto_contenido_formulario{
+            padding: 5px;
+            width: fit-content;
+        }
+    }
+
+    /*------conocenos------*/
+
+    .hero_conocenos{
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            width: 230px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 25px;
+
+            text-align: center;
+        }
+    }
+
+    .acordeon{
+        .galeria{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+            padding: 30px;
+        }
+    }
+
+    /*------Unete------*/
+    .hero_unete{
+        h2{
+            font-size: 26px;
+        }
+    }
+    .contenido_unete{
+        .incripcion_info{
+            h2{
+                font-weight: 600;
+                font-size: 25px;
+                padding: 34px;
+                color: $color-secundario;
+                width: 255px;
+            }
+        }
+        .unete_contenedor{
+            background-color: $color-principal;
+            width: fit-content;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            .formulario_unete{
+                .for-1{
+                    .nyp{
+                        width: 125px;
+                        div{
+                            input{
+                                border: $color-tercero;
+                                border-radius: 5px;
+                                padding: 10px;
+                                height: 30px;
+                                width: 180px;
+    
+                            }
+                        }
+                    }
+                    .naciemiento{
+                        div{
+                            select{
+                                width: 60px;
+                            }
+                        }
+                        .año{
+                            input{
+                                width: 122px;
+    
+                            }
+                        }
+                    }
+                    .especie_sexo{
+                        div{
+                            select{
+                                width: 126px;
+                            }
+                        }
+                        .mail{
+                            input{
+                                border: $color-tercero;
+                                border-radius: 5px;
+                                padding: 10px;
+                                height: 30px;
+                                width: 180px;
+    
+                            }
+                        }
+                    }
+                }
+                .for-2{
+                    .datos_adicionales{
+                        div{
+                            input{
+                                border: $color-tercero;
+                                border-radius: 5px;
+                                padding: 10px;
+                                height: 30px;
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .informacion{
+        .informacion_introduccion{
+            img{
+                border-radius: 30px;
+                width: 250px;
+                margin: 0px;
+                padding: 5px;
+            }
+        }
+        .video{
+            iframe{
+                padding: 25px;
+                width: 250px;
+            }
+        }
+    }
+
+    /*------contacto------*/
+
+    .contacto_contenido{
+        .contacto_contenido_formulario{
+            .contenido_formulario{
+                div{
+                    form-control{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+    /*------conocenos------*/
+    /*------Unete------*/
+    .contenido_unete{
+        .unete_contenedor{
+            h3{
+                color: $color-tercero;
+                width: 276px;
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+            }
+            .formulario_unete{
+                .for-1{
+                    .nyp{
+                        div{
+                            input{
+                                width: 110px;
+                            }
+                        }
+                    }
+                    .naciemiento{
+                        .año{
+                            input{
+                                width: 95px;
+                            }
+                        }
+                    }
+                    .especie_sexo{
+                        div{
+                            select{
+                                width: 100px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

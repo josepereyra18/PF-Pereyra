@@ -1,0 +1,108 @@
+.footer{
+    background-color: $color-secundario;
+    padding: 10px;
+    .footer_contenedor{
+        color: $color-tercero;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family:Merriweather Sans, sans-serif ;
+        .contactos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4{
+                font-weight: 300;
+                font-style: initial;
+                font-size: 20px;
+                padding: 20px;
+            }
+            .linea_bot{
+                border-top: 3px solid rgba(187, 187, 187, 0.251);
+                height: 2px;
+                width: 50%;
+                padding: 10px;
+            }
+            p{
+                font-weight: 300;
+                font-style: normal;
+                font-size: 15px;
+            }
+        }
+        .subscripcion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                font-weight: 300;
+                font-style: initial;
+                padding: 20px;
+                font-size: 20px;
+            }
+            .susbribir{
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                background-color: $color-tercero;
+                border-radius: 20px;
+                width: fit-content;
+                padding: 10px;
+                font-size: 15px;
+                transition: 0.2s;
+                &:hover{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    background-color: $color-principal;
+                    border-radius: 20px;
+                    width: fit-content;
+                    padding: 10px;
+                    font-size: 15px;
+                    color: $color-tercero;
+                }
+            }
+            .redes{
+                padding: 20px;
+                display: flex;
+                width: 270px;
+                justify-content: space-around;
+                align-items: center;
+                li{
+                    text-decoration: none;
+                    list-style: none;
+                    a{
+                        img{
+                            width: 25px;
+                            transition: 0.2s;
+                            &:hover{
+                                width: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .watermark{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100px;
+            }
+            h4{
+                font-family: Inconsolata;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+        
+    }
+    .derechos{
+        padding-left:  0px;
+        font-family:Merriweather Sans, sans-serif ;
+        text-align: center;
+        font-size: 15px;
+        color: $color-tercero;
+    }
+}

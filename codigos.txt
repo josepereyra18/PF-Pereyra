@@ -1,0 +1,372 @@
+.hero{
+    .hero_flex_contenedor{
+        h2{
+
+        }
+        p{
+
+        }
+        li{
+            a{
+
+            }
+        }
+    }
+}
+
+.informacion{
+    .informacion_introduccion{
+        h3{
+
+        }
+        p{
+
+        }
+        img{
+
+        }
+        .informacion_introduccion_imagen_descripcion{
+
+        }
+    }
+    .video{
+        h3{
+
+        }
+        iframe{
+
+        }
+        p{
+
+        }
+    }
+}
+
+.personal{
+    .linea{
+
+    }
+    h2{
+
+    }
+    .contener{
+        div{
+            img{
+
+            }
+            h4{
+
+            }
+        }
+    }
+}
+
+.imagenes{
+    h2{
+
+    }
+    #carouselExampleCaptions{
+        div{
+            button{
+
+            }
+        }
+        div{
+            div{
+                img{
+
+                }
+                div{
+                    h5{
+
+                    }
+                    p{
+
+                    }
+                }
+            }
+        }
+        button{
+
+        }
+    }
+}
+
+
+
+
+
+contactos
+
+
+.hero_contacto{
+    h2{
+
+    }
+    p{
+
+    }
+}
+
+
+.contacto_contenido{
+    h3{
+
+    }
+    .contacto_contenido_arriba{
+        .contacto_contenido_numeros{
+            p{
+
+            }
+        }
+        .contacto_contenido_localizacion{
+            p{
+
+            }
+            iframe{
+
+            }
+        }
+    }
+    .contacto_contenido_formulario{
+        h4{
+
+        }
+        .contenido_formulario{
+            div{
+                label{
+
+                }
+                form-control{
+
+                }
+            }
+            div{
+                label{
+
+                }
+                form-control{
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+conocenos
+
+.hero_conocenos{
+    p{
+
+    }
+    h4{
+
+    }
+}
+.acordeon{
+    .accordion{
+        div{
+            h2{
+                button{
+
+                }
+            }
+            div{
+                div{
+
+                }
+            }
+        }
+    }
+    .galeria{
+            .grid-item foto1{
+
+            }
+            .grid-item foto2{
+
+            }
+            .grid-item foto3{
+
+            }
+            .grid-item foto4{
+
+            }
+            .grid-item foto5{
+
+            }
+            .grid-item foto6{
+
+            }
+            .grid-item foto7{
+
+            }
+            .grid-item foto8{
+
+            }
+            .grid-item foto9{
+
+            }
+    }
+}
+
+
+
+
+Únete
+
+.hero_unete{
+    h2{
+
+    }
+}
+
+.contenido_unete{
+        .incripcion_info{
+            h2{
+    
+            }
+            p{
+    
+            }
+        }
+        .unete_contenedor{
+            h3{
+
+            }
+            .formulario_unete{
+                .for-1{
+                    .nyp{
+                        div{
+                            label{
+    
+                            }
+                            input{
+    
+                            }
+                        }
+                    }
+                    .naciemiento{
+                        div{
+                            label{
+    
+                            }
+                            select{
+                                option{
+    
+                                }
+                            }
+                        }
+                        .año{
+                            label{
+    
+                            }
+                            input{
+    
+                            }
+                        }
+                    }
+                    .especie_sexo{
+                        div{
+                            label{
+    
+                            }
+                            select{
+                                option{
+    
+                                }
+                            }
+                        }
+                        .mail{
+                            label{
+    
+                            }
+                            input{
+    
+                            }
+                        }
+                    }
+                }
+                .for-2{
+                    .datos_adicionales{
+                        div{
+                            label{
+    
+                            }
+                            input{
+    
+                            }
+                        }
+                    }
+                }
+            }
+            div{
+                div{
+                    label{
+
+                    }
+                    form-control{
+    
+                    }
+                }
+            }
+            .enviar{
+    
+            }
+        }
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    .footer_contenedor{
+        .contactos{
+            h4{
+
+            }
+            .linea_bot{
+
+            }
+            p{
+
+            }
+        }
+        .subscripcion{
+            h4{
+
+            }
+            .susbribir{
+
+            }
+            .redes{
+                li{
+                    a{
+                        img{
+
+                        }
+                    }
+                }
+            }
+        }
+        .watermark{
+            img{
+
+            }
+            h4{
+
+            }
+        }
+    }
+    p{
+
+    }
+}
