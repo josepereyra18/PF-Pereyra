@@ -5,7 +5,7 @@ header{
         div{
             .navbar-brand{
                 h1{
-                    font-size: 30px;
+                    font-size: nth($font-size, 5);
                     font-family:Inconsolata;
                     font-weight: 600;
                 }

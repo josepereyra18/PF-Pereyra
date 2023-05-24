@@ -61,7 +61,7 @@ main {
     padding: 6px;
     background-color: aliceblue;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 15px;
     color: #5f6cdc; }
 
 .informacion, .personal .contener, .contenido_unete .unete_contenedor .formulario_unete, .contenido_unete .unete_contenedor .formulario_unete .for-1 .nyp, .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento, .contenido_unete .unete_contenedor .formulario_unete .for-1 .especie_sexo {
@@ -105,7 +105,7 @@ header {
     font-family: Merriweather Sans, sans-serif;
     padding: 75px; }
     .hero .hero_flex_contenedor .hero_fraseuno {
-      font-size: 50px;
+      font-size: 60px;
       width: 750px;
       color: aliceblue; }
     .hero .hero_flex_contenedor .hero_frasedos {
@@ -129,7 +129,7 @@ header {
   font-family: Merriweather Sans, sans-serif; }
   .hero_contacto h2 {
     color: aliceblue;
-    font-size: 50px; }
+    font-size: 60px; }
   .hero_contacto p {
     font-size: 25px;
     color: #f1f8fe82; }
@@ -168,7 +168,7 @@ header {
   font-family: Merriweather Sans, sans-serif;
   font-size: 60px; }
   .hero_unete h2 {
-    font-size: 50px;
+    font-size: 60px;
     color: aliceblue; }
 
 /*BODY*/
@@ -232,7 +232,7 @@ header {
     text-align: center;
     font-family: Merriweather Sans, sans-serif;
     width: 870px;
-    font-size: 28px; }
+    font-size: 30px; }
   .personal .contener {
     width: fit-content;
     border-radius: 30px;
@@ -382,7 +382,7 @@ header {
   .contenido_unete .incripcion_info {
     padding: 20px; }
     .contenido_unete .incripcion_info h2 {
-      font-size: 35px;
+      font-size: 30px;
       padding: 34px;
       color: #0b0b0b; }
     .contenido_unete .incripcion_info p {
@@ -622,13 +622,13 @@ header {
         border-radius: 15px;
         font-family: Merriweather Sans, sans-serif;
         font-weight: 600;
-        font-size: 11px; }
+        font-size: 10px; }
         .personal .contener div h4:hover {
           width: 160px;
           padding: 11px;
           background-color: aliceblue;
           border-radius: 31px;
-          font-size: 12px;
+          font-size: 10px;
           color: #5f6cdc; }
   /*------contacto------*/
   /*------conocenos------*/
@@ -658,7 +658,7 @@ header {
     width: 630px; }
   .hero_conocenos h4 {
     font-weight: 500;
-    font-size: 55px;
+    font-size: 50px;
     text-align: center; } }
 
 @media screen and (max-width: 900px) {
@@ -676,7 +676,7 @@ header {
       padding: 20px; }
       .contenido_unete .incripcion_info h2 {
         font-weight: 600;
-        font-size: 35px;
+        font-size: 30px;
         padding: 34px;
         color: #0b0b0b; }
       .contenido_unete .incripcion_info p {
@@ -789,7 +789,7 @@ header {
         border-radius: 15px;
         font-family: Merriweather Sans, sans-serif;
         font-weight: 600;
-        font-size: 9px;
+        font-size: 10px;
         color: aliceblue; }
         .personal .contener div h4:hover {
           width: 110px;
@@ -892,7 +892,7 @@ header {
   .footer .footer_contenedor .contactos h4 {
     font-weight: 300;
     font-style: initial;
-    font-size: 12px;
+    font-size: 10px;
     padding: 20px;
     text-align: center; }
   .footer .footer_contenedor .contactos .linea_bot {
@@ -912,7 +912,7 @@ header {
       font-weight: 300;
       font-style: initial;
       padding: 20px;
-      font-size: 12px;
+      font-size: 15px;
       text-align: center; }
     .footer .footer_contenedor .subscripcion .susbribir {
       color: black;
@@ -930,7 +930,7 @@ header {
         border-radius: 20px;
         width: fit-content;
         padding: 10px;
-        font-size: 17px;
+        font-size: 15px;
         color: aliceblue; }
     .footer .footer_contenedor .subscripcion .redes {
       padding: 20px;
@@ -1044,7 +1044,7 @@ header {
     width: 530px; }
   .hero_conocenos h4 {
     font-weight: 500;
-    font-size: 45px;
+    font-size: 50px;
     text-align: center; }
   /*------Unete------*/ }
 
@@ -1088,7 +1088,7 @@ header {
         border-radius: 15px;
         font-family: Merriweather Sans, sans-serif;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 15px;
         margin: -25px;
         color: aliceblue; }
         .personal .contener div h4:hover {
@@ -1096,7 +1096,7 @@ header {
           padding: 11px;
           background-color: aliceblue;
           border-radius: 31px;
-          font-size: 14px;
+          font-size: 15px;
           color: #5f6cdc; }
   /*------contacto------*/
   /*------conocenos------*/
@@ -1112,7 +1112,7 @@ header {
     width: 430px; }
   .hero_conocenos h4 {
     font-weight: 500;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center; }
   /*------Unete------*/
   .contenido_unete .incripcion_info h2 {
@@ -1154,11 +1154,11 @@ header {
     padding: 13px;
     width: 350px; }
   .hero .hero_flex_contenedor .hero_fraseuno {
-    font-size: 35px;
+    font-size: 30px;
     width: 360px;
     text-align: center; }
   .hero .hero_flex_contenedor .hero_frasedos {
-    font-size: 18px;
+    font-size: 20px;
     width: 320px;
     text-align: center;
     color: #f1f8fe82; }
@@ -1167,7 +1167,7 @@ header {
     background-color: aliceblue;
     border-radius: 15px;
     padding: 12px;
-    font-size: 18px;
+    font-size: 20px;
     box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px; }
   .imagenes #carouselExampleCaptions {
     width: 350px; }
@@ -1176,9 +1176,9 @@ header {
     justify-content: space-between; }
   /*------contacto------*/
   .hero_contacto h2 {
-    font-size: 35px; }
+    font-size: 30px; }
   .hero_contacto p {
-    font-size: 18px; }
+    font-size: 20px; }
   .contacto_contenido .contacto_contenido_formulario .contenido_formulario div form-control {
     width: 350px; }
   /*------conocenos------*/
@@ -1199,7 +1199,7 @@ header {
     grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9"; }
   /*------Unete------*/
   .hero_unete h2 {
-    font-size: 35px; } }
+    font-size: 30px; } }
 
 @media screen and (max-width: 450px) {
   .footer {
@@ -1221,7 +1221,7 @@ header {
         .footer .footer_contenedor .contactos h4 {
           font-weight: 300;
           font-style: initial;
-          font-size: 17px;
+          font-size: 15px;
           padding: 20px; }
         .footer .footer_contenedor .contactos .linea_bot {
           border-top: 3px solid rgba(187, 187, 187, 0.251);
@@ -1317,7 +1317,7 @@ header {
         border-radius: 15px;
         font-family: Merriweather Sans, sans-serif;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 15px;
         margin: 0px;
         color: aliceblue; }
         .personal .contener div h4:hover {
@@ -1325,13 +1325,13 @@ header {
           padding: 11px;
           background-color: aliceblue;
           border-radius: 31px;
-          font-size: 14px;
+          font-size: 15px;
           color: #5f6cdc; }
   .informacion .informacion_introduccion p {
     color: rgba(0, 0, 0, 0.432);
     font-weight: 300;
     font-style: normal;
-    font-size: 17px;
+    font-size: 15px;
     padding: 28px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -1373,7 +1373,7 @@ header {
       color: rgba(0, 0, 0, 0.432);
       font-weight: 300;
       font-style: normal;
-      font-size: 17px;
+      font-size: 15px;
       padding: 28px;
       padding-bottom: 0px;
       padding-top: 0px;
@@ -1409,7 +1409,7 @@ header {
     padding: 0px;
     padding-bottom: 0px; }
   .hero .hero_flex_contenedor .hero_fraseuno {
-    font-size: 26px;
+    font-size: 25px;
     width: 280px;
     text-align: center; }
   .hero .hero_flex_contenedor .hero_frasedos {
@@ -1422,11 +1422,11 @@ header {
     background-color: aliceblue;
     border-radius: 15px;
     padding: 12px;
-    font-size: 18px;
+    font-size: 20px;
     box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px; }
   /*------contacto------*/
   .hero_contacto h2 {
-    font-size: 26px; }
+    font-size: 25px; }
   .hero_contacto p {
     font-size: 15px; }
   .contacto_contenido .contacto_contenido_arriba {
@@ -1452,7 +1452,7 @@ header {
     padding: 30px; }
   /*------Unete------*/
   .hero_unete h2 {
-    font-size: 26px; }
+    font-size: 25px; }
   .contenido_unete .incripcion_info h2 {
     font-weight: 600;
     font-size: 25px;

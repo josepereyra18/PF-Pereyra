@@ -17,11 +17,11 @@
             padding: 50px;
 
             h2{
-                font-size: 50px;
+                font-size: nth($font-size, 6);
                 width: 600px;
             }
             p{
-                font-size: 20px;
+                font-size: nth($font-size, 3);
                 width: 530px;
             }
             li{
@@ -45,7 +45,7 @@
 
 .hero_contacto{
     h2{
-        font-size: 20px;
+        font-size: nth($font-size, 3);
     }
 }
 
@@ -91,13 +91,13 @@
                     border-radius: 15px;
                     font-family:Merriweather Sans, sans-serif ;
                     font-weight: 600;
-                    font-size: 11px;
+                    font-size: nth($font-size, 1);
                     &:hover{
                         width: 160px;
                         padding: 11px;
                         background-color: $color-tercero;
                         border-radius: 31px;
-                        font-size: 12px;
+                        font-size: nth($font-size, 1);
                         color: $color-principal;
                     }
                 }
@@ -118,7 +118,7 @@
             .informacion_introduccion_imagen_descripcion{
                 font-style: normal;
                 color: rgba(0, 0, 0, 0.436);
-                font-size: 15px;
+                font-size:nth($font-size, 2);
             }
         }
         .video{
@@ -155,12 +155,12 @@
     .hero_conocenos{
         p{
             font-weight: 300;
-            font-size: 25px;
+            font-size: nth($font-size, 4);
             width: 630px;
         }
         h4{
             font-weight: 500;
-            font-size: 55px;
+            font-size: nth($font-size, 6);
 
             text-align: center;
         }
@@ -184,14 +184,14 @@
             padding: 20px;
             h2{
                 font-weight: 600;
-                font-size: 35px;
+                font-size: nth($font-size, 5);
                 padding: 34px;
                 color: $color-secundario;
             }
             p{
                 font-weight: 300;
                 color: rgba(0, 0, 0, 0.536);
-                font-size: 20px;
+                font-size: nth($font-size, 3);
                 text-align: justify;
             }
         }
@@ -307,7 +307,7 @@
             .informacion_introduccion_imagen_descripcion{
                 font-style: normal;
                 color: rgba(0, 0, 0, 0.436);
-                font-size: 15px;
+                font-size: nth($font-size, 2);
                 padding-left: 0px;
             }
         }
@@ -351,14 +351,14 @@
                     border-radius: 15px;
                     font-family:Merriweather Sans, sans-serif ;
                     font-weight: 600;
-                    font-size: 9px;
+                    font-size:nth($font-size, 1);
                     color: $color-tercero;
                     &:hover{
                         width: 110px;
                         padding: 6px;
                         background-color: $color-tercero;
                         border-radius: 31px;
-                        font-size: 10px;
+                        font-size: nth($font-size, 1);
                         color: $color-principal;
                     }
                 }
@@ -399,7 +399,7 @@
                         border-radius: 20px;
                         width: fit-content;
                         padding: 10px;
-                        font-size: 15px;
+                        font-size: nth($font-size, 2);
                         color: $color-tercero;
                     }
                 }
@@ -436,7 +436,7 @@
                 h4{
                     font-family: Inconsolata;
                     font-weight: 600;
-                    font-size: 15px;
+                    font-size: nth($font-size, 2);
                 }
             }
             
@@ -444,7 +444,7 @@
         .derechos{
             font-family:Merriweather Sans, sans-serif ;
             text-align: center;
-            font-size: 10px;
+            font-size: nth($font-size, 1);
             color: $color-tercero;
         }
     }
@@ -462,7 +462,7 @@
                 width: 400px;
             }
             .hero_frasedos{
-                font-size: 20px;
+                font-size: nth($font-size, 3);
                 width: 400px;
             }
             li{
@@ -474,7 +474,7 @@
                     background-color: $color-principal;
                     border-radius: 15px;
                     padding: 12px;
-                    font-size: 15px;
+                    font-size: nth($font-size, 2);
                     box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
                 }
             }
@@ -495,7 +495,7 @@
                 h4{
                     font-weight: 300;
                     font-style: initial;
-                    font-size: 12px;
+                    font-size: nth($font-size, 1);
                     padding: 20px;
                     text-align: center;
                 }
@@ -505,7 +505,7 @@
                 p{
                     font-weight: 300;
                     font-style: normal;
-                    font-size: 10px;
+                    font-size: nth($font-size, 1);
                 }
             }
             .subscripcion{
@@ -519,7 +519,7 @@
                     font-weight: 300;
                     font-style: initial;
                     padding: 20px;
-                    font-size: 12px;
+                    font-size: nth($font-size, 2);
                     text-align: center;
                 }
                 .susbribir{
@@ -529,7 +529,7 @@
                     border-radius: 20px;
                     width: fit-content;
                     padding: 7px;
-                    font-size: 15px;
+                    font-size:nth($font-size, 2);
                     transition: 0.2s;
                     &:hover{
                         color: rgb(0, 0, 0);
@@ -538,7 +538,7 @@
                         border-radius: 20px;
                         width: fit-content;
                         padding: 10px;
-                        font-size: 17px;
+                        font-size: nth($font-size, 2);
                         color: $color-tercero;
                     }
                 }
@@ -575,7 +575,7 @@
                 h4{
                     font-family: Inconsolata;
                     font-weight: 600;
-                    font-size: 15px;
+                    font-size: nth($font-size, 2);
                     text-align: center;
                 }
             }
@@ -585,7 +585,7 @@
             padding-left:  0px;
             font-family:Merriweather Sans, sans-serif ;
             text-align: center;
-            font-size: 10px;
+            font-size: nth($font-size, 1);
             color: $color-tercero;
         }
     }
@@ -665,12 +665,12 @@
             padding: 50px;
             height: 90vh;
             .hero_fraseuno{
-                font-size: 50px;
+                font-size: nth($font-size, 6);
                 width: 480px;
                 text-align: center;
             }
             hero_frasedos{
-                font-size: 20px;
+                font-size: nth($font-size, 3);
                 width: 400px;
                 text-align: center;
                 color: #f1f8fe82;
@@ -704,7 +704,7 @@
         }
         .contacto_contenido_formulario{
             h4{
-                font-size: 20px;
+                font-size: nth($font-size, 3);
             }
         }
 }
@@ -731,12 +731,12 @@
     .hero_conocenos{
         p{
             font-weight: 300;
-            font-size: 20px;
+            font-size: nth($font-size, 3);
             width: 530px;
         }
         h4{
             font-weight: 500;
-            font-size: 45px;
+            font-size: nth($font-size, 6);
 
             text-align: center;
         }
@@ -791,7 +791,7 @@
                     border-radius: 15px;
                     font-family:Merriweather Sans, sans-serif ;
                     font-weight: 600;
-                    font-size: 13px;
+                    font-size: nth($font-size, 2);
                     margin: -25px;
                     color: $color-tercero;
                     &:hover{
@@ -799,7 +799,7 @@
                         padding: 11px;
                         background-color: $color-tercero;
                         border-radius: 31px;
-                        font-size: 14px;
+                        font-size: nth($font-size, 2);
                         color: $color-principal;
                     }
                 }
@@ -824,12 +824,12 @@
     .hero_conocenos{
         p{
             font-weight: 300;
-            font-size: 25px;
+            font-size: nth($font-size, 4);
             width: 430px;
         }
         h4{
             font-weight: 500;
-            font-size: 35px;
+            font-size: nth($font-size, 5);
 
             text-align: center;
         }
@@ -841,7 +841,7 @@
         .incripcion_info{
             h2{
                 font-weight: 600;
-                font-size: 30px;
+                font-size: nth($font-size, 5);
                 padding: 34px;
                 color: $color-secundario;
             }
@@ -852,7 +852,7 @@
                 width: 387px;
                 text-align: center;
                 padding: 10px;
-                font-size: 20px;
+                font-size: nth($font-size, 3);
             }
             .formulario_unete{
                 display: flex;
@@ -881,7 +881,7 @@
                 h4{
                     font-family: Inconsolata;
                     font-weight: 600;
-                    font-size: 10px;
+                    font-size: nth($font-size, 1);
                 }
             }
             
@@ -910,12 +910,12 @@
     .hero{
         .hero_flex_contenedor{
             .hero_fraseuno{
-                font-size: 35px;
+                font-size: nth($font-size, 5);
                 width: 360px;
                 text-align: center;
             }
             .hero_frasedos{
-                font-size: 18px;
+                font-size: nth($font-size, 3);
                 width: 320px;
                 text-align: center;
                 color: #f1f8fe82;
@@ -926,7 +926,7 @@
                     background-color: $color-tercero;
                     border-radius: 15px;
                     padding: 12px;
-                    font-size: 18px;
+                    font-size: nth($font-size, 3);
                     box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
                 }
             }
@@ -956,10 +956,10 @@
 
     .hero_contacto{
         h2{
-            font-size: 35px;
+            font-size: nth($font-size, 5);
         }
         p{
-            font-size: 18px;
+            font-size: nth($font-size, 3);
         }
     }
     .contacto_contenido{
@@ -978,12 +978,12 @@
     .hero_conocenos{
         p{
             font-weight: 400;
-            font-size: 15px;
+            font-size: nth($font-size, 2);
             width: 330px;
         }
         h4{
             font-weight: 500;
-            font-size: 30px;
+            font-size: nth($font-size, 5);
 
             text-align: center;
         }
@@ -1013,7 +1013,7 @@
 
     .hero_unete{
         h2{
-            font-size: 35px;
+            font-size: nth($font-size, 5);
         }
     }
 }
@@ -1039,7 +1039,7 @@
                 h4{
                     font-weight: 300;
                     font-style: initial;
-                    font-size: 17px;
+                    font-size: nth($font-size, 2);
                     padding: 20px;
                 }
                 .linea_bot{
@@ -1051,7 +1051,7 @@
                 p{
                     font-weight: 300;
                     font-style: normal;
-                    font-size: 15px;
+                    font-size: nth($font-size, 2);
                 }
             }
             .subscripcion{
@@ -1064,7 +1064,7 @@
                     font-weight: 300;
                     font-style: initial;
                     padding: 17px;
-                    font-size: 20px;
+                    font-size: nth($font-size, 3);
                 }
                 .susbribir{
                     color: rgb(0, 0, 0);
@@ -1109,7 +1109,7 @@
                 h4{
                     font-family: Inconsolata;
                     font-weight: 600;
-                    font-size: 20px;
+                    font-size: nth($font-size, 3);
                 }
             }
             
@@ -1117,7 +1117,7 @@
         .derechos{
             font-family:Merriweather Sans, sans-serif ;
             text-align: center;
-            font-size: 15px;
+            font-size: nth($font-size, 2);
             color: $color-tercero;
         }
     }
@@ -1157,7 +1157,7 @@
                     border-radius: 15px;
                     font-family:Merriweather Sans, sans-serif ;
                     font-weight: 600;
-                    font-size: 13px;
+                    font-size: nth($font-size, 2);
                     margin: 0px;
                     color: $color-tercero;
                     &:hover{
@@ -1165,7 +1165,7 @@
                         padding: 11px;
                         background-color: $color-tercero;
                         border-radius: 31px;
-                        font-size: 14px;
+                        font-size: nth($font-size, 2);
                         color: $color-principal;
                     }
                 }
@@ -1178,7 +1178,7 @@
                 color: $color-texto;
                 font-weight: 300;
                 font-style: normal;
-                font-size: 17px;
+                font-size: nth($font-size, 2);
                 padding: 28px;
                 padding-bottom: 0px;
                 padding-top: 0px;
@@ -1204,7 +1204,7 @@
             div{
                 .navbar-brand{
                     h1{
-                        font-size: 20px;
+                        font-size: nth($font-size, 3);
                     }
                 }
             }
@@ -1236,7 +1236,7 @@
                     width: 300px;
                     text-align: center;
                     padding: 10px;
-                    font-size: 20px;
+                    font-size: nth($font-size, 3);
                 }
             }
         }
@@ -1255,14 +1255,14 @@
             h3{
                 padding: 28px;
                 font-style: normal;
-                font-size: 30px;
+                font-size: nth($font-size, 5);
                 text-align: center;
             }
             p{
                 color: $color-texto;
                 font-weight: 300;
                 font-style: normal;
-                font-size: 17px;
+                font-size: nth($font-size, 2);
                 padding: 28px;
                 padding-bottom: 0px;
                 padding-top: 0px;
@@ -1277,7 +1277,7 @@
             .informacion_introduccion_imagen_descripcion{
                 font-style: normal;
                 color: rgba(0, 0, 0, 0.436);
-                font-size: 10px;
+                font-size: nth($font-size, 1);
                 padding-left: 0px;
             }
         }
@@ -1314,12 +1314,12 @@
     .hero{
         .hero_flex_contenedor{
             .hero_fraseuno{
-                font-size: 26px;
+                font-size: nth($font-size, 4);
                 width: 280px;
                 text-align: center;
             }
             .hero_frasedos{
-                font-size: 15px;
+                font-size: nth($font-size, 2);
                 width: 225px;
                 text-align: center;
                 color: #f1f8fe82;
@@ -1330,7 +1330,7 @@
                     background-color: $color-tercero;
                     border-radius: 15px;
                     padding: 12px;
-                    font-size: 18px;
+                    font-size: nth($font-size, 3);
                     box-shadow: rgba(67, 35, 35, 0.596) 0px 3px 8px;
                 }
             }
@@ -1340,10 +1340,10 @@
     /*------contacto------*/
     .hero_contacto{
         h2{
-            font-size: 26px;
+            font-size: nth($font-size, 4);
         }
         p{
-            font-size: 15px;
+            font-size: nth($font-size, 2);
         }
     }
     
@@ -1364,12 +1364,12 @@
     .hero_conocenos{
         p{
             font-weight: 400;
-            font-size: 15px;
+            font-size: nth($font-size, 2);
             width: 230px;
         }
         h4{
             font-weight: 500;
-            font-size: 25px;
+            font-size: nth($font-size, 4);
 
             text-align: center;
         }
@@ -1388,14 +1388,14 @@
     /*------Unete------*/
     .hero_unete{
         h2{
-            font-size: 26px;
+            font-size: nth($font-size, 4);
         }
     }
     .contenido_unete{
         .incripcion_info{
             h2{
                 font-weight: 600;
-                font-size: 25px;
+                font-size: nth($font-size, 4);
                 padding: 34px;
                 color: $color-secundario;
                 width: 255px;
@@ -1514,7 +1514,7 @@
                 width: 276px;
                 text-align: center;
                 padding: 10px;
-                font-size: 20px;
+                font-size: nth($font-size, 3);
             }
             .formulario_unete{
                 .for-1{

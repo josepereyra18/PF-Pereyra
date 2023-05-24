@@ -1,486 +1,431 @@
     /*HERO*/
     /*--- Index ---*/
-        .hero{
-            background-image: url(../img/fondo10.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: bottom ;
-            height: 90vh;
-            background-attachment:scroll;
-            background-color: black;
-            .hero_flex_contenedor{
-                color: $color-tercero;
-                font-family: Merriweather Sans, sans-serif;
-                padding: 75px;
-                .hero_fraseuno{
-                    font-size: 50px;
-                    width: 750px;
-                    color:$titulos-hero;
-                    }
-                .hero_frasedos{
-                    font-size: 25px;
-                    width: 543px;
-                    color: $subtitulo-hero;
-                }
-                li{
-                    list-style: none;
-                    padding-top: 8px;
-                    padding-left: 182px;
-                    a{
-                        @extend %boton;
-                        }
-                    }
-                }
-            }
-        
-
-    /*--- contactanos ---*/
-
-        .hero_contacto{
-            background-image: url(../img/galeri12.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center ;
-            height: 92vh;
-            background-attachment: fixed;
+    .hero{
+        background-image: url(../img/fondo10.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        height: 90vh;
+        background-attachment:scroll;
+        background-color: black;
+        .hero_flex_contenedor{
             color: $color-tercero;
-            font-family:Merriweather Sans, sans-serif ;
-            @extend %flex-colum;
-                h2{
-                    color: $titulos-hero;
-                    font-size: 50px;
+            font-family: Merriweather Sans, sans-serif;
+            padding: 75px;
+            .hero_fraseuno{
+                font-size: nth($font-size, 7);
+                width: 750px;
+                color:$titulos-hero;
                 }
-                p{
-                    font-size: 25px;
-                    color: $subtitulo-hero;
-                }
-        }
-
-
-    /*--- conocenos ---*/
-
-        .hero_conocenos{
-            background-image: url(../img/galeri15.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: top ;
-            height: 92vh;
-            background-attachment: fixed;
-            color: $color-tercero;
-            font-family:Merriweather Sans, sans-serif ;
-            @extend %flex-colum;
-            p{
-                font-weight: 300;
-                font-size: 30px;
-                width: 800px;
+            .hero_frasedos{
+                font-size: nth($font-size, 4);
+                width: 543px;
                 color: $subtitulo-hero;
             }
-            h4{
-                font-weight: 500;
-                font-size: 60px;
-                font-style: italic;
-                text-align: center;
-                color: $titulos-hero;
+            li{
+                list-style: none;
+                padding-top: 8px;
+                padding-left: 182px;
+                a{
+                    @extend %boton;
+                    }
+                }
             }
         }
+    
 
+/*--- contactanos ---*/
 
-    /*--- únete ---*/
-
-        .hero_unete{
-            background-image: url(../img/galeri2.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: top ;
-            height: 92vh;
-            background-attachment: fixed;
-            color: $color-tercero;
-            font-family:Merriweather Sans, sans-serif ;
-            font-size: 60px;
-            @extend %flex-colum;
+    .hero_contacto{
+        background-image: url(../img/galeri12.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+        height: 92vh;
+        background-attachment: fixed;
+        color: $color-tercero;
+        font-family:Merriweather Sans, sans-serif ;
+        @extend %flex-colum;
             h2{
-                font-size: 50px;
                 color: $titulos-hero;
+                font-size: nth($font-size, 7);
             }
+            p{
+                font-size: nth($font-size, 4);
+                color: $subtitulo-hero;
+            }
+    }
+
+
+/*--- conocenos ---*/
+
+    .hero_conocenos{
+        background-image: url(../img/galeri15.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: top ;
+        height: 92vh;
+        background-attachment: fixed;
+        color: $color-tercero;
+        font-family:Merriweather Sans, sans-serif ;
+        @extend %flex-colum;
+        p{
+            font-weight: 300;
+            font-size: nth($font-size, 5);
+            width: 800px;
+            color: $subtitulo-hero;
         }
+        h4{
+            font-weight: 500;
+            font-size: nth($font-size, 7);
+            font-style: italic;
+            text-align: center;
+            color: $titulos-hero;
+        }
+    }
+
+
+/*--- únete ---*/
+
+    .hero_unete{
+        background-image: url(../img/galeri2.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: top ;
+        height: 92vh;
+        background-attachment: fixed;
+        color: $color-tercero;
+        font-family:Merriweather Sans, sans-serif ;
+        font-size: nth($font-size, 7);
+        @extend %flex-colum;
+        h2{
+            font-size:nth($font-size, 7);
+            color: $titulos-hero;
+        }
+    }
 
 
 
 /*BODY*/
 /*--- Index ---*/
 
-        .informacion{
-        margin: 30px;
-        @extend %flex-row;
-        font-family: Merriweather Sans, sans-serif;
-        align-items: flex-start;
-        .informacion_introduccion{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
-            h3{
-                @extend %titulos;
-                padding: 28px;
-                font-size: 30px;
-            }
-            p{
-                @extend %cuerpo-texto;
-                font-weight: 300;
-                font-style: normal;
-                font-size: 20px;
-                padding: 28px;
-                padding-bottom: 0px;
-                padding-top: 0px;
-            }
-            img{
-                border-radius: 60px;
-                width: 40vw;
-                padding: 28px;
-            }
-            .informacion_introduccion_imagen_descripcion{
-                font-style: normal;
-                color: rgba(0, 0, 0, 0.436);
-                font-size: 15px;
-            }
-        }
-        .video{
-            @extend %flex-colum;
-            flex-wrap: wrap;
-            h3{
-                @extend %titulos;
-                padding: 28px;
-                font-style: normal;
-                font-size: 30px;
-            }
-            iframe{
-                padding: 28px;
-                width: 600px;
-            }
-            p{
-                @extend %cuerpo-texto;
-                font-weight: 300;
-                font-style: normal;
-                font-size: 20px;
-                padding: 28px;
-                padding-bottom: 0px;
-                padding-top: 0px;
-            }
-        }
-    }
-
-
-    .personal{
-        @extend %flex-colum;
-        height: auto;
-        border-radius: 60px;
-        .linea{
-            border-top: 2px solid rgba(0, 0, 0, 0.251);
-            height: 2px;
-            width: 50%;
-            margin-top: 40px;
-            padding-bottom: 30px;
-        }
-        h2{
+    .informacion{
+    margin: 30px;
+    @extend %flex-row;
+    font-family: Merriweather Sans, sans-serif;
+    align-items: flex-start;
+    .informacion_introduccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        h3{
             @extend %titulos;
-            padding: 20px;
-            text-align: center;
-            font-family:Merriweather Sans, sans-serif;
-            width: 870px;
-            font-size: 28px;
-        }
-        .contener{
-            width: fit-content;
-            border-radius: 30px;
-            
-            @extend %flex-row;
-            flex-wrap: wrap;
-            margin: 20px;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-            div{
-                text-align: center;
-                width: 200px;
-                height: 200px;
-                margin: 20px;
-                border-radius: 45px;
-                @extend %flex-colum;
-                flex-wrap: wrap;
-                img{
-                    width: 120px;
-                    border-radius: 100%;
-                    padding: 10px;
-                }
-                h4{
-                    @extend %burbujas;
-                    }
-                }
-            }
-        }
-
-
-        .imagenes{
-            @extend %flex-colum;
-            padding: 20px;
-            h2{
-                font-family:Merriweather Sans, sans-serif;
-                font-weight: 600;
-                padding: 20px;
-                text-align: center;
-            }
-            #carouselExampleCaptions{
-                width: 800px;
-            }
-        }
-
-
-/*--- conocenos ---*/
-    .acordeon{
-        @extend %flex-colum;
-        .accordion{
-            padding: 30px;
-            width: 70%;
-        }
-        .galeria{
-            width: 70%;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 15px;
-            padding: 30px;
-            grid-template-areas:
-            "foto3 foto3 foto1"
-            "foto3 foto3 foto2"
-            "foto5 foto6 foto4"
-            "foto7 foto9 foto4"
-            "foto8 foto8 foto8"
-            "foto8 foto8 foto8";
-            .foto1{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-area: foto1;
-            }
-            .foto2{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-area: foto2;
-            }
-            .foto3{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-row: span 2;
-                grid-column: span 2;
-                grid-area: foto3;
-            }
-            .foto4{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-row: span 2;
-                grid-area: foto4;
-            }
-            .foto5{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-area: foto5;
-            }
-            .foto6{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-area: foto6;
-            }
-            .foto7{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-area: foto7;
-            }
-            .foto8{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-row: span 3;
-                grid-column: span 3;
-                grid-area: foto8;
-            }
-            .foto9{
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover ;
-                position: relative;
-                grid-area: foto9;
-            }
-        }
-    }
-
-/*--- contactanos ---*/
-    .contacto_contenido{
-        font-family:Merriweather Sans, sans-serif ;
-        @extend %flex-colum;
-        text-align: center;
-        padding: 30px;
-        .contacto_contenido_arriba{
-            padding: 15px;
-            width: fit-content;
-            display: flex;
-            .contacto_contenido_numeros{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                width: 50vh;
-                p{
-                    @extend %cuerpo-texto;
-                    padding: 10px;
-                }
-            }
-            .contacto_contenido_localizacion{
-                p{
-                    @extend %cuerpo-texto;
-                }
-                iframe{
-                    width: 200px;
-                    height:200px ;
-                }
-            }
-        }
-        .contacto_contenido_formulario{
-            padding: 15px;
-            width: fit-content;
-            background-color: $color-principal;
-            border-radius: 15px;
-            h4{
-                color: $color-tercero;
-            }
-            .contenido_formulario{
-                div{
-                    label{
-                        color : $color-tercero
-                    }
-                    width:auto;
-                    @extend %flex-colum;
-                }
-            }
-        }
-    }
-
-/*--- únete ---*/
-
-    .contenido_unete{
-    font-family:Merriweather Sans, sans-serif ;
-    margin: 10px;
-    padding: 30px;
-    @extend %flex-colum;
-    .incripcion_info{
-        padding: 20px;
-        h2{
-            @extend %titulos;
-            font-size: 35px;
-            padding: 34px;
-            color: $color-secundario;
+            padding: 28px;
+            font-size: nth($font-size, 5);
         }
         p{
             @extend %cuerpo-texto;
-            font-size: 20px;
-            text-align: justify;
+            font-weight: 300;
+            font-style: normal;
+            font-size: nth($font-size, 3);
+            padding: 28px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+        img{
+            border-radius: 60px;
+            width: 40vw;
+            padding: 28px;
+        }
+        .informacion_introduccion_imagen_descripcion{
+            font-style: normal;
+            color: rgba(0, 0, 0, 0.436);
+            font-size: nth($font-size, 2);
         }
     }
-    .unete_contenedor{
-        background-color: $color-principal;
-        border-radius: 30px;
+    .video{
         @extend %flex-colum;
-        padding: 15px;
+        flex-wrap: wrap;
         h3{
-            color: $color-tercero;
-            width: 500px;
-            text-align: center;
-            padding: 10px;
+            @extend %titulos;
+            padding: 28px;
+            font-style: normal;
+            font-size: nth($font-size, 5);
         }
-        .formulario_unete{
-            @extend %flex-row;
+        iframe{
+            padding: 28px;
+            width: 600px;
+        }
+        p{
+            @extend %cuerpo-texto;
+            font-weight: 300;
+            font-style: normal;
+            font-size: nth($font-size, 3);
+            padding: 28px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+    }
+}
+
+
+.personal{
+    @extend %flex-colum;
+    height: auto;
+    border-radius: 60px;
+    .linea{
+        border-top: 2px solid rgba(0, 0, 0, 0.251);
+        height: 2px;
+        width: 50%;
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    h2{
+        @extend %titulos;
+        padding: 20px;
+        text-align: center;
+        font-family:Merriweather Sans, sans-serif;
+        width: 870px;
+        font-size: nth($font-size, 5);
+    }
+    .contener{
+        width: fit-content;
+        border-radius: 30px;
+        
+        @extend %flex-row;
+        flex-wrap: wrap;
+        margin: 20px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        div{
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 45px;
+            @extend %flex-colum;
+            flex-wrap: wrap;
+            img{
+                width: 120px;
+                border-radius: 100%;
+                padding: 10px;
+            }
+            h4{
+                @extend %burbujas;
+                }
+            }
+        }
+    }
+
+
+    .imagenes{
+        @extend %flex-colum;
+        padding: 20px;
+        h2{
+            font-family:Merriweather Sans, sans-serif;
+            font-weight: 600;
             padding: 20px;
-            padding: 10px;
-            .for-1{
+            text-align: center;
+        }
+        #carouselExampleCaptions{
+            width: 800px;
+        }
+    }
+
+
+/*--- conocenos ---*/
+.acordeon{
+    @extend %flex-colum;
+    .accordion{
+        padding: 30px;
+        width: 70%;
+    }
+    .galeria{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+        padding: 30px;
+        grid-template-areas:
+        "foto3 foto3 foto1"
+        "foto3 foto3 foto2"
+        "foto5 foto6 foto4"
+        "foto7 foto9 foto4"
+        "foto8 foto8 foto8"
+        "foto8 foto8 foto8";
+        .foto1{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-area: foto1;
+        }
+        .foto2{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-area: foto2;
+        }
+        .foto3{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-row: span 2;
+            grid-column: span 2;
+            grid-area: foto3;
+        }
+        .foto4{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-row: span 2;
+            grid-area: foto4;
+        }
+        .foto5{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-area: foto5;
+        }
+        .foto6{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-area: foto6;
+        }
+        .foto7{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-area: foto7;
+        }
+        .foto8{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-row: span 3;
+            grid-column: span 3;
+            grid-area: foto8;
+        }
+        .foto9{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            position: relative;
+            grid-area: foto9;
+        }
+    }
+}
+
+/*--- contactanos ---*/
+.contacto_contenido{
+    font-family:Merriweather Sans, sans-serif ;
+    @extend %flex-colum;
+    text-align: center;
+    padding: 30px;
+    .contacto_contenido_arriba{
+        padding: 15px;
+        width: fit-content;
+        display: flex;
+        .contacto_contenido_numeros{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 50vh;
+            p{
+                @extend %cuerpo-texto;
+                padding: 10px;
+            }
+        }
+        .contacto_contenido_localizacion{
+            p{
+                @extend %cuerpo-texto;
+            }
+            iframe{
+                width: 200px;
+                height:200px ;
+            }
+        }
+    }
+    .contacto_contenido_formulario{
+        padding: 15px;
+        width: fit-content;
+        background-color: $color-principal;
+        border-radius: 15px;
+        h4{
+            color: $color-tercero;
+        }
+        .contenido_formulario{
+            div{
+                label{
+                    color : $color-tercero
+                }
+                width:auto;
                 @extend %flex-colum;
-                .nyp{
-                    @extend %flex-row;
-                    div{
-                        display: flex;
-                        flex-direction: column;
-                        label{
-                            color: $color-tercero;
-                        }
-                        input{
-                            border: $color-tercero;
-                            border-radius: 5px;
-                            padding: 10px;
-                            height: 30px;
-                        }
-                    }
-                }
-                .naciemiento{
-                    @extend %flex-row;
-                    div{
-                        display: flex;
-                        flex-direction: column;
-                        label{
-                            color: $color-tercero;
-                        }
-                        select{
-                            width: 95px;
-                            border-radius: 5px;
-                            height: 30px;
-                        }
-                    }
-                    div{
-                        label{
-                            color: $color-tercero;
-                        }
-                        input{
-                            border: $color-tercero;
-                            border-radius: 5px;
-                            padding: 10px;
-                            height: 30px;
-                        }
-                    }
-                }
-                .especie_sexo{
-                    @extend %flex-row;
-                    div{
-                        display: flex;
-                        flex-direction: column;
-                        label{
-                            color: $color-tercero;
-                        }
-                        select{
-                            width: 200px;    
-                            border-radius: 5px;
-                            height: 30px;
-                        }
-                    }
-                }
-                .mail{
+            }
+        }
+    }
+}
+
+/*--- únete ---*/
+
+.contenido_unete{
+font-family:Merriweather Sans, sans-serif ;
+margin: 10px;
+padding: 30px;
+@extend %flex-colum;
+.incripcion_info{
+    padding: 20px;
+    h2{
+        @extend %titulos;
+        font-size: nth($font-size, 5);
+        padding: 34px;
+        color: $color-secundario;
+    }
+    p{
+        @extend %cuerpo-texto;
+        font-size: nth($font-size, 3);
+        text-align: justify;
+    }
+}
+.unete_contenedor{
+    background-color: $color-principal;
+    border-radius: 30px;
+    @extend %flex-colum;
+    padding: 15px;
+    h3{
+        color: $color-tercero;
+        width: 500px;
+        text-align: center;
+        padding: 10px;
+    }
+    .formulario_unete{
+        @extend %flex-row;
+        padding: 20px;
+        padding: 10px;
+        .for-1{
+            @extend %flex-colum;
+            .nyp{
+                @extend %flex-row;
+                div{
                     display: flex;
                     flex-direction: column;
                     label{
@@ -494,30 +439,50 @@
                     }
                 }
             }
-            .for-2{
-                .datos_adicionales{
+            .naciemiento{
+                @extend %flex-row;
+                div{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
-                    div{
-                        display: flex;
-                        flex-direction: column;
-                        label{
-                            color: $color-tercero;
-                        }
-                        input{
-                            border: $color-tercero;
-                            border-radius: 5px;
-                            padding: 10px;
-                            height: 30px;
-                        }
+                    label{
+                        color: $color-tercero;
+                    }
+                    select{
+                        width: 95px;
+                        border-radius: 5px;
+                        height: 30px;
+                    }
+                }
+                div{
+                    label{
+                        color: $color-tercero;
+                    }
+                    input{
+                        border: $color-tercero;
+                        border-radius: 5px;
+                        padding: 10px;
+                        height: 30px;
                     }
                 }
             }
-        }
-        div{
-            padding: 10px;
-            div{
+            .especie_sexo{
+                @extend %flex-row;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        color: $color-tercero;
+                    }
+                    select{
+                        width: 200px;    
+                        border-radius: 5px;
+                        height: 30px;
+                    }
+                }
+            }
+            .mail{
+                display: flex;
+                flex-direction: column;
                 label{
                     color: $color-tercero;
                 }
@@ -529,10 +494,45 @@
                 }
             }
         }
-        .enviar{
-            @extend %boton;
-            width: 80px;
-            padding: 10px;
+        .for-2{
+            .datos_adicionales{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        color: $color-tercero;
+                    }
+                    input{
+                        border: $color-tercero;
+                        border-radius: 5px;
+                        padding: 10px;
+                        height: 30px;
+                    }
+                }
+            }
         }
     }
+    div{
+        padding: 10px;
+        div{
+            label{
+                color: $color-tercero;
+            }
+            input{
+                border: $color-tercero;
+                border-radius: 5px;
+                padding: 10px;
+                height: 30px;
+            }
+        }
+    }
+    .enviar{
+        @extend %boton;
+        width: 80px;
+        padding: 10px;
+    }
+}
 }

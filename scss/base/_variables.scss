@@ -14,6 +14,15 @@ $font-color:$color-tercero;
 $hover-color:$color-tercero;
 $hover-contraste: $color-principal;
 
+$font-size:
+10px, //1
+15px, //2
+20px, //3
+25px, //4
+30px, //5
+50px, //6
+60px; //7
+
 
 
 // placeholder %
@@ -36,7 +45,7 @@ $hover-contraste: $color-principal;
     color: $font-color;
     border-radius: $border-radius;
     padding: 12px;
-    font-size: 15px;
+    font-size: nth($font-size, 2);
     outline: 0;
     transition: all .2s ease;
     line-height: 1;
@@ -63,19 +72,16 @@ $hover-contraste: $color-principal;
     border-radius: 15px;
     color: $font-color;
     transition: 0.2s;
-    font-size: 15px;
+    font-size: nth($font-size, 2);
     &:hover{
         width: 155px;
         padding: 6px;
         background-color: $hover-color;
         border-radius: 30px;
-        font-size: 16px;
+        font-size: nth($font-size, 2);
         color: $hover-contraste;
     }
 }
-
-
-
 
 %flex-row{
     display: flex;
@@ -90,6 +96,7 @@ $hover-contraste: $color-principal;
     align-items:center;
     justify-content:center;
 }
+
 
 
 

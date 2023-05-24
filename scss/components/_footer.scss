@@ -16,7 +16,7 @@
             h4{
                 font-weight: 300;
                 font-style: initial;
-                font-size: 20px;
+                font-size: nth($font-size, 3);
                 padding: 20px;
             }
             .linea_bot{
@@ -28,7 +28,7 @@
             p{
                 font-weight: 300;
                 font-style: normal;
-                font-size: 15px;
+                font-size: nth($font-size, 2);
             }
         }
         .subscripcion{
@@ -39,7 +39,7 @@
                 font-weight: 300;
                 font-style: initial;
                 padding: 20px;
-                font-size: 20px;
+                font-size:nth($font-size, 3);
             }
             .susbribir{
                 color: rgb(0, 0, 0);
@@ -48,7 +48,7 @@
                 border-radius: 20px;
                 width: fit-content;
                 padding: 10px;
-                font-size: 15px;
+                font-size: nth($font-size, 2);
                 transition: 0.2s;
                 &:hover{
                     color: rgb(0, 0, 0);
@@ -57,7 +57,7 @@
                     border-radius: 20px;
                     width: fit-content;
                     padding: 10px;
-                    font-size: 15px;
+                    font-size: nth($font-size, 2);
                     color: $color-tercero;
                 }
             }
@@ -93,7 +93,7 @@
             h4{
                 font-family: Inconsolata;
                 font-weight: 600;
-                font-size: 20px;
+                font-size: nth($font-size, 3);
             }
         }
         
@@ -102,7 +102,7 @@
         padding-left:  0px;
         font-family:Merriweather Sans, sans-serif ;
         text-align: center;
-        font-size: 15px;
+        font-size: nth($font-size, 2);
         color: $color-tercero;
     }
 }
