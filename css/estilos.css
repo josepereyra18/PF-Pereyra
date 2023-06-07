@@ -20,7 +20,7 @@ main {
 
 /*COLOR TEXTO*/
 /*BOTON COLOR*/
-.informacion .informacion_introduccion h3, .informacion .video h3, .personal h2, .contenido_unete .incripcion_info h2 {
+.informacion .informacion_introduccion h3, .informacion .video h3, .personal h3, .contenido_unete .incripcion_info h2, .paquetes h3 {
   color: #0b0b0b;
   font-weight: 600; }
 
@@ -28,7 +28,7 @@ main {
   color: rgba(0, 0, 0, 0.432);
   font-weight: 300; }
 
-.hero .hero_flex_contenedor li a, .contenido_unete .unete_contenedor .enviar {
+.hero .hero_flex_contenedor li a, .contenido_unete .unete_contenedor .enviar, .paquetes .paquetes_contenedor .card1 a, .paquetes .paquetes_contenedor .card2 a, .paquetes .paquetes_contenedor .card3 a, .paquetes .hoteles .card4 a, .paquetes .hoteles .card5 a, .paquetes .hoteles .card6 a {
   background-color: #5f6cdc;
   color: aliceblue;
   border-radius: 15px;
@@ -38,12 +38,12 @@ main {
   transition: all .2s ease;
   line-height: 1;
   user-select: none; }
-  .hero .hero_flex_contenedor li a:hover, .contenido_unete .unete_contenedor .enviar:hover {
+  .hero .hero_flex_contenedor li a:hover, .contenido_unete .unete_contenedor .enviar:hover, .paquetes .paquetes_contenedor .card1 a:hover, .paquetes .paquetes_contenedor .card2 a:hover, .paquetes .paquetes_contenedor .card3 a:hover, .paquetes .hoteles .card4 a:hover, .paquetes .hoteles .card5 a:hover, .paquetes .hoteles .card6 a:hover {
     background-color: aliceblue;
     color: #5f6cdc; }
-  .hero .hero_flex_contenedor li a:focus, .contenido_unete .unete_contenedor .enviar:focus {
+  .hero .hero_flex_contenedor li a:focus, .contenido_unete .unete_contenedor .enviar:focus, .paquetes .paquetes_contenedor .card1 a:focus, .paquetes .paquetes_contenedor .card2 a:focus, .paquetes .paquetes_contenedor .card3 a:focus, .paquetes .hoteles .card4 a:focus, .paquetes .hoteles .card5 a:focus, .paquetes .hoteles .card6 a:focus {
     outline: 0; }
-  .hero .hero_flex_contenedor li a:active, .contenido_unete .unete_contenedor .enviar:active {
+  .hero .hero_flex_contenedor li a:active, .contenido_unete .unete_contenedor .enviar:active, .paquetes .paquetes_contenedor .card1 a:active, .paquetes .paquetes_contenedor .card2 a:active, .paquetes .paquetes_contenedor .card3 a:active, .paquetes .hoteles .card4 a:active, .paquetes .hoteles .card5 a:active, .paquetes .hoteles .card6 a:active {
     transform: scale3d(0.95, 0.95, 1); }
 
 .personal .contener div h4 {
@@ -70,7 +70,7 @@ main {
   justify-content: space-around;
   align-items: center; }
 
-.hero_contacto, .hero_conocenos, .hero_unete, .informacion .video, .personal, .personal .contener div, .imagenes, .acordeon, .contacto_contenido, .contacto_contenido .contacto_contenido_formulario .contenido_formulario div, .contenido_unete, .contenido_unete .unete_contenedor, .contenido_unete .unete_contenedor .formulario_unete .for-1 {
+.hero_contacto, .hero_conocenos, .hero_unete, .hero_vacaciones, .informacion .video, .personal, .personal .contener div, .imagenes, .acordeon, .contacto_contenido, .contacto_contenido .contacto_contenido_formulario .contenido_formulario div, .contenido_unete, .contenido_unete .unete_contenedor, .contenido_unete .unete_contenedor .formulario_unete .for-1, .paquetes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,25 +93,30 @@ header {
 /*HERO*/
 /*--- Index ---*/
 .hero {
-  background-image: url(../img/fondo10.jpg);
+  background-image: url(../img/fondo11.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 90vh;
-  background-attachment: scroll;
-  background-color: black; }
+  height: 92vh;
+  background-attachment: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   .hero .hero_flex_contenedor {
     color: aliceblue;
     font-family: Merriweather Sans, sans-serif;
     padding: 75px; }
     .hero .hero_flex_contenedor .hero_fraseuno {
       font-size: 60px;
-      width: 750px;
-      color: aliceblue; }
+      width: 450px;
+      color: aliceblue;
+      text-align: justify; }
     .hero .hero_flex_contenedor .hero_frasedos {
       font-size: 25px;
-      width: 543px;
-      color: #f1f8fe82; }
+      width: 450px;
+      color: #f1f8feaf;
+      text-align: justify; }
     .hero .hero_flex_contenedor li {
       list-style: none;
       padding-top: 8px;
@@ -132,7 +137,7 @@ header {
     font-size: 60px; }
   .hero_contacto p {
     font-size: 25px;
-    color: #f1f8fe82; }
+    color: #f1f8feaf; }
 
 /*--- conocenos ---*/
 .hero_conocenos {
@@ -144,12 +149,12 @@ header {
   background-attachment: fixed;
   color: aliceblue;
   font-family: Merriweather Sans, sans-serif; }
-  .hero_conocenos p {
+  .hero_conocenos h4 {
     font-weight: 300;
     font-size: 30px;
     width: 800px;
-    color: #f1f8fe82; }
-  .hero_conocenos h4 {
+    color: #f1f8feaf; }
+  .hero_conocenos p {
     font-weight: 500;
     font-size: 60px;
     font-style: italic;
@@ -170,6 +175,22 @@ header {
   .hero_unete h2 {
     font-size: 60px;
     color: aliceblue; }
+
+/*--- viajes ---*/
+.hero_vacaciones {
+  background-image: url(../img/viajes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 92vh;
+  background-attachment: fixed;
+  color: aliceblue;
+  font-family: Merriweather Sans, sans-serif; }
+  .hero_vacaciones h2 {
+    font-size: 60px;
+    color: aliceblue;
+    width: 800px;
+    text-align: center; }
 
 /*BODY*/
 /*--- Index ---*/
@@ -227,7 +248,7 @@ header {
     width: 50%;
     margin-top: 40px;
     padding-bottom: 30px; }
-  .personal h2 {
+  .personal h3 {
     padding: 20px;
     text-align: center;
     font-family: Merriweather Sans, sans-serif;
@@ -252,8 +273,9 @@ header {
         padding: 10px; }
 
 .imagenes {
+  padding-bottom: 54px;
   padding: 20px; }
-  .imagenes h2 {
+  .imagenes h4 {
     font-family: Merriweather Sans, sans-serif;
     font-weight: 600;
     padding: 20px;
@@ -342,13 +364,17 @@ header {
     position: relative;
     grid-area: foto9; }
 
+.acordeon .imagenes {
+  padding-bottom: 54px; }
+
 /*--- contactanos ---*/
 .contacto_contenido {
+  padding-top: 54px;
+  padding-bottom: 20px;
   font-family: Merriweather Sans, sans-serif;
-  text-align: center;
-  padding: 30px; }
+  text-align: center; }
   .contacto_contenido .contacto_contenido_arriba {
-    padding: 15px;
+    padding: 70px;
     width: fit-content;
     display: flex; }
     .contacto_contenido .contacto_contenido_arriba .contacto_contenido_numeros {
@@ -365,14 +391,14 @@ header {
   .contacto_contenido .contacto_contenido_formulario {
     padding: 15px;
     width: fit-content;
-    background-color: #5f6cdc;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 15px; }
     .contacto_contenido .contacto_contenido_formulario h4 {
-      color: aliceblue; }
+      color: #5f6cdc; }
     .contacto_contenido .contacto_contenido_formulario .contenido_formulario div {
       width: auto; }
       .contacto_contenido .contacto_contenido_formulario .contenido_formulario div label {
-        color: aliceblue; }
+        color: #5f6cdc; }
 
 /*--- únete ---*/
 .contenido_unete {
@@ -400,58 +426,65 @@ header {
     .contenido_unete .unete_contenedor .formulario_unete {
       padding: 20px;
       padding: 10px; }
-      .contenido_unete .unete_contenedor .formulario_unete .for-1 .nyp div {
-        display: flex;
-        flex-direction: column; }
-        .contenido_unete .unete_contenedor .formulario_unete .for-1 .nyp div label {
-          color: aliceblue; }
-        .contenido_unete .unete_contenedor .formulario_unete .for-1 .nyp div input {
-          border: aliceblue;
-          border-radius: 5px;
-          padding: 10px;
-          height: 30px; }
-      .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div {
-        display: flex;
-        flex-direction: column; }
+      .contenido_unete .unete_contenedor .formulario_unete .for-1 {
+        padding: 12px; }
+        .contenido_unete .unete_contenedor .formulario_unete .for-1 .nyp div {
+          display: flex;
+          flex-direction: column;
+          margin: 5px; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .nyp div label {
+            color: aliceblue; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .nyp div input {
+            border: aliceblue;
+            border-radius: 5px;
+            padding: 10px;
+            height: 30px; }
+        .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div {
+          display: flex;
+          flex-direction: column;
+          margin: 5px; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div label {
+            color: aliceblue; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div select {
+            width: 95px;
+            border-radius: 5px;
+            height: 30px; }
         .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div label {
           color: aliceblue; }
-        .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div select {
-          width: 95px;
-          border-radius: 5px;
-          height: 30px; }
-      .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div label {
-        color: aliceblue; }
-      .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div input {
-        border: aliceblue;
-        border-radius: 5px;
-        padding: 10px;
-        height: 30px; }
-      .contenido_unete .unete_contenedor .formulario_unete .for-1 .especie_sexo div {
-        display: flex;
-        flex-direction: column; }
-        .contenido_unete .unete_contenedor .formulario_unete .for-1 .especie_sexo div label {
-          color: aliceblue; }
-        .contenido_unete .unete_contenedor .formulario_unete .for-1 .especie_sexo div select {
-          width: 200px;
-          border-radius: 5px;
-          height: 30px; }
-      .contenido_unete .unete_contenedor .formulario_unete .for-1 .mail {
-        display: flex;
-        flex-direction: column; }
-        .contenido_unete .unete_contenedor .formulario_unete .for-1 .mail label {
-          color: aliceblue; }
-        .contenido_unete .unete_contenedor .formulario_unete .for-1 .mail input {
+        .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div input {
           border: aliceblue;
           border-radius: 5px;
           padding: 10px;
           height: 30px; }
+        .contenido_unete .unete_contenedor .formulario_unete .for-1 .especie_sexo div {
+          display: flex;
+          flex-direction: column;
+          margin: 5px; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .especie_sexo div label {
+            color: aliceblue; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .especie_sexo div select {
+            width: 200px;
+            border-radius: 5px;
+            height: 30px; }
+        .contenido_unete .unete_contenedor .formulario_unete .for-1 .mail {
+          display: flex;
+          flex-direction: column;
+          margin: 5px; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .mail label {
+            color: aliceblue; }
+          .contenido_unete .unete_contenedor .formulario_unete .for-1 .mail input {
+            border: aliceblue;
+            border-radius: 5px;
+            padding: 10px;
+            height: 30px; }
       .contenido_unete .unete_contenedor .formulario_unete .for-2 .datos_adicionales {
         display: flex;
         flex-direction: column;
         align-items: center; }
         .contenido_unete .unete_contenedor .formulario_unete .for-2 .datos_adicionales div {
           display: flex;
-          flex-direction: column; }
+          flex-direction: column;
+          margin: 5px; }
           .contenido_unete .unete_contenedor .formulario_unete .for-2 .datos_adicionales div label {
             color: aliceblue; }
           .contenido_unete .unete_contenedor .formulario_unete .for-2 .datos_adicionales div input {
@@ -459,18 +492,75 @@ header {
             border-radius: 5px;
             padding: 10px;
             height: 30px; }
-    .contenido_unete .unete_contenedor div {
+    .contenido_unete .unete_contenedor .archivos {
       padding: 10px; }
-      .contenido_unete .unete_contenedor div div label {
-        color: aliceblue; }
-      .contenido_unete .unete_contenedor div div input {
-        border: aliceblue;
-        border-radius: 5px;
-        padding: 10px;
-        height: 30px; }
+      .contenido_unete .unete_contenedor .archivos div {
+        margin: 5px; }
+        .contenido_unete .unete_contenedor .archivos div label {
+          color: aliceblue; }
+        .contenido_unete .unete_contenedor .archivos div input {
+          border: aliceblue;
+          border-radius: 5px;
+          padding: 10px;
+          height: 30px; }
     .contenido_unete .unete_contenedor .enviar {
       width: 80px;
       padding: 10px; }
+
+/*--- viajes ---*/
+.paquetes {
+  padding-top: 54px;
+  padding-bottom: 20px; }
+  .paquetes h3 {
+    padding: 20px;
+    text-align: center;
+    font-family: Merriweather Sans, sans-serif;
+    width: 870px;
+    font-size: 30px; }
+  .paquetes .paquetes_contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: first baseline;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 30px;
+    grid-template-areas: "card1 card2 card3"; }
+    .paquetes .paquetes_contenedor .card1 {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; }
+    .paquetes .paquetes_contenedor .card2 {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; }
+    .paquetes .paquetes_contenedor .card3 {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; }
+  .paquetes h3 {
+    padding: 20px;
+    text-align: center;
+    font-family: Merriweather Sans, sans-serif;
+    width: 870px;
+    font-size: 30px; }
+  .paquetes .hoteles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: first baseline;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 30px;
+    grid-template-areas: "card4 card5 card6"; }
+    .paquetes .hoteles .card4 {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; }
+    .paquetes .hoteles .card5 {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; }
+    .paquetes .hoteles .card6 {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; }
 
 .footer {
   background-color: #0b0b0b;
@@ -553,12 +643,6 @@ header {
         font-family: Inconsolata;
         font-weight: 600;
         font-size: 20px; }
-  .footer .derechos {
-    padding-left: 0px;
-    font-family: Merriweather Sans, sans-serif;
-    text-align: center;
-    font-size: 15px;
-    color: aliceblue; }
 
 @media screen and (max-width: 1200px) {
   .hero div {
@@ -586,7 +670,7 @@ header {
     width: 500px; }
   /*------contacto------*/
   .hero_contacto h2 {
-    font-size: 20px; }
+    font-size: 30px; }
   /*------conocenos------*/
   /*------Unete------*/ }
 
@@ -632,7 +716,21 @@ header {
           color: #5f6cdc; }
   /*------contacto------*/
   /*------conocenos------*/
-  /*------Unete------*/ }
+  /*------Unete------*/
+  /*------Viajes------*/
+  .paquetes .paquetes_contenedor {
+    align-items: first baseline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 30px;
+    grid-template-areas: "card1 card2" "card3 card3"; }
+  .paquetes .hoteles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 30px;
+    grid-template-areas: "card4 card5" "card6 card6"; } }
 
 @media screen and (max-width: 967px) {
   .informacion .informacion_introduccion .informacion_introduccion_imagen_descripcion {
@@ -642,7 +740,7 @@ header {
   .informacion .video iframe {
     padding: 28px;
     width: 400px; }
-  .personal h2 {
+  .personal h3 {
     padding: 20px;
     text-align: center;
     font-family: Merriweather Sans, sans-serif;
@@ -652,11 +750,11 @@ header {
     width: 650px; }
   /*------contacto------*/
   /*------conocenos------*/
-  .hero_conocenos p {
+  .hero_conocenos h4 {
     font-weight: 300;
     font-size: 25px;
     width: 630px; }
-  .hero_conocenos h4 {
+  .hero_conocenos p {
     font-weight: 500;
     font-size: 50px;
     text-align: center; } }
@@ -726,12 +824,22 @@ header {
             padding: 10px;
             height: 30px;
             width: 180px; }
-      .contenido_unete .unete_contenedor div div input {
+      .contenido_unete .unete_contenedor .archivos div input {
         border: aliceblue;
         border-radius: 5px;
         padding: 10px;
         height: 30px;
-        width: 180px; } }
+        width: 180px; }
+  /*------viaje------*/
+  .hero_vacaciones h2 {
+    font-size: 60px;
+    color: aliceblue;
+    width: 650px;
+    text-align: center; }
+  .paquetes h3 {
+    width: 650px; }
+  .paquetes h3 {
+    width: 650px; } }
 
 @media screen and (max-width: 800px) {
   .informacion {
@@ -855,24 +963,19 @@ header {
         font-family: Inconsolata;
         font-weight: 600;
         font-size: 15px; }
-  .footer .derechos {
-    font-family: Merriweather Sans, sans-serif;
-    text-align: center;
-    font-size: 10px;
-    color: aliceblue; }
   .hero {
-    background-image: url(../img/fondo10.jpg);
+    background-image: url(../img/fondo11.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: 90vh;
-    background-attachment: scroll;
+    height: 91vh;
+    background-attachment: fixed;
     background-color: black; }
     .hero .hero_flex_contenedor .hero_fraseuno {
-      width: 400px; }
+      width: 320px; }
     .hero .hero_flex_contenedor .hero_frasedos {
       font-size: 20px;
-      width: 400px; }
+      width: 320px; }
     .hero .hero_flex_contenedor li {
       list-style: none;
       padding-top: 54px;
@@ -959,13 +1062,7 @@ header {
       font-weight: 600;
       font-size: 15px;
       text-align: center; }
-  .footer .derechos {
-    padding-left: 0px;
-    font-family: Merriweather Sans, sans-serif;
-    text-align: center;
-    font-size: 10px;
-    color: aliceblue; }
-  .personal h2 {
+  .personal h3 {
     padding: 20px;
     text-align: center;
     font-family: Merriweather Sans, sans-serif;
@@ -978,7 +1075,7 @@ header {
   /*------Unete------*/
   .contenido_unete .unete_contenedor .formulario_unete {
     padding: 4px; }
-  .contenido_unete .unete_contenedor div {
+  .contenido_unete .unete_contenedor .archivos {
     padding: 4px; } }
 
 @media screen and (max-width: 700px) {
@@ -990,12 +1087,12 @@ header {
     padding: 28px;
     width: 400px; }
   .hero {
-    background-image: url(../img/fondo10.jpg);
+    background-image: url(../img/fondo11.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
-    height: 90vh;
-    background-attachment: scroll;
+    background-position: right;
+    height: 92vh;
+    background-attachment: fixed;
     background-color: black; }
     .hero .hero_flex_contenedor {
       color: aliceblue;
@@ -1005,7 +1102,7 @@ header {
       justify-content: center;
       align-items: center;
       padding: 50px;
-      height: 90vh; }
+      height: 91vh; }
       .hero .hero_flex_contenedor .hero_fraseuno {
         font-size: 50px;
         width: 480px;
@@ -1038,18 +1135,54 @@ header {
     gap: 15px;
     padding: 30px;
     grid-template-areas: "foto1 foto4" "foto2 foto4" "foto3 foto3" "foto3 foto3" "foto5 foto7" "foto6 foto8" "foto6 foto9"; }
-  .hero_conocenos p {
+  .hero_conocenos h4 {
     font-weight: 300;
     font-size: 20px;
     width: 530px; }
-  .hero_conocenos h4 {
+  .hero_conocenos p {
     font-weight: 500;
     font-size: 50px;
     text-align: center; }
-  /*------Unete------*/ }
+  /*------Unete------*/
+  /*------viaje------*/
+  .hero_vacaciones {
+    background-image: url(../img/viajes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right; }
+    .hero_vacaciones h2 {
+      font-size: 60px;
+      color: aliceblue;
+      width: 500px;
+      text-align: center; }
+  .paquetes h3 {
+    padding: 5px;
+    text-align: center;
+    font-family: Merriweather Sans, sans-serif;
+    width: 500px;
+    font-size: 30px; }
+  .paquetes .paquetes_contenedor {
+    align-items: first baseline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 5px;
+    grid-template-areas: "card1 card2" "card3 card3"; }
+  .paquetes h3 {
+    padding: 5px;
+    text-align: center;
+    font-family: Merriweather Sans, sans-serif;
+    width: 500px;
+    font-size: 30px; }
+  .paquetes .hoteles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 5px;
+    grid-template-areas: "card4 card5" "card6 card6"; } }
 
 @media screen and (max-width: 600px) {
-  .personal h2 {
+  .personal h3 {
     padding: 20px;
     text-align: center;
     font-family: Merriweather Sans, sans-serif;
@@ -1106,11 +1239,11 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 30px; }
-  .hero_conocenos p {
+  .hero_conocenos h4 {
     font-weight: 300;
     font-size: 25px;
     width: 430px; }
-  .hero_conocenos h4 {
+  .hero_conocenos p {
     font-weight: 500;
     font-size: 30px;
     text-align: center; }
@@ -1130,7 +1263,26 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 20px; } }
+    padding: 20px; }
+  /*------Viajes------*/
+  .hero_vacaciones h2 {
+    font-size: 30px;
+    color: aliceblue;
+    width: 500px;
+    text-align: center; }
+  .paquetes .paquetes_contenedor {
+    align-items: first baseline;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 30px;
+    grid-template-areas: "card1" "card2" "card3"; }
+  .paquetes .hoteles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 30px;
+    grid-template-areas: "card4" "card5" "card6"; } }
 
 @media screen and (max-width: 500px) {
   .footer .footer_contenedor .watermark {
@@ -1182,11 +1334,11 @@ header {
   .contacto_contenido .contacto_contenido_formulario .contenido_formulario div form-control {
     width: 350px; }
   /*------conocenos------*/
-  .hero_conocenos p {
+  .hero_conocenos h4 {
     font-weight: 400;
     font-size: 15px;
     width: 330px; }
-  .hero_conocenos h4 {
+  .hero_conocenos p {
     font-weight: 500;
     font-size: 30px;
     text-align: center; }
@@ -1199,7 +1351,19 @@ header {
     grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9"; }
   /*------Unete------*/
   .hero_unete h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  /*------Viajes------*/
+  .hero_vacaciones h2 {
+    font-size: 30px;
+    color: aliceblue;
+    width: 350px;
+    text-align: center; }
+  .paquetes h3 {
+    font-size: 25px;
+    width: 350px; }
+  .paquetes h3 {
+    font-size: 25px;
+    width: 350px; } }
 
 @media screen and (max-width: 450px) {
   .footer {
@@ -1279,11 +1443,6 @@ header {
           font-family: Inconsolata;
           font-weight: 600;
           font-size: 20px; }
-    .footer .derechos {
-      font-family: Merriweather Sans, sans-serif;
-      text-align: center;
-      font-size: 15px;
-      color: aliceblue; }
   .personal .contener {
     width: fit-content;
     border-radius: 30px;
@@ -1346,6 +1505,8 @@ header {
   header nav div .navbar-brand h1 {
     font-size: 20px; }
   /*------contacto------*/
+  .contacto_contenido .contacto_contenido_arriba {
+    padding: 30px; }
   .contacto_contenido .contacto_contenido_formulario .contenido_formulario div form-control {
     width: 300px; }
   /*------conocenos------*/
@@ -1355,7 +1516,20 @@ header {
     width: 300px;
     text-align: center;
     padding: 10px;
-    font-size: 20px; } }
+    font-size: 20px; }
+  /*------Viaje------*/
+  .hero_vacaciones h2 {
+    width: 300px; }
+  .paquetes .paquetes_contenedor {
+    padding: 15px; }
+  .paquetes h3 {
+    font-size: 25px;
+    width: 300px; }
+  .paquetes h3 {
+    font-size: 25px;
+    width: 300px; }
+  .paquetes .hoteles {
+    padding: 15px; } }
 
 @media screen and (max-width: 400px) {
   .informacion {
@@ -1391,7 +1565,7 @@ header {
     .informacion .video iframe {
       padding: 25px;
       width: 290px; }
-  .personal h2 {
+  .personal h3 {
     padding: 0px;
     text-align: center;
     font-family: Merriweather Sans, sans-serif;
@@ -1436,11 +1610,11 @@ header {
     padding: 5px;
     width: fit-content; }
   /*------conocenos------*/
-  .hero_conocenos p {
+  .hero_conocenos h4 {
     font-weight: 400;
     font-size: 15px;
     width: 230px; }
-  .hero_conocenos h4 {
+  .hero_conocenos p {
     font-weight: 500;
     font-size: 25px;
     text-align: center; }
@@ -1474,7 +1648,7 @@ header {
         border-radius: 5px;
         padding: 10px;
         height: 30px;
-        width: 180px; }
+        width: 140px; }
     .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento div select {
       width: 60px; }
     .contenido_unete .unete_contenedor .formulario_unete .for-1 .naciemiento .año input {

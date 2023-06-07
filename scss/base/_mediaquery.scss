@@ -16,19 +16,19 @@
             font-family: Merriweather Sans, sans-serif;
             padding: 50px;
 
-            h2{
-                font-size: nth($font-size, 6);
-                width: 600px;
-            }
-            p{
-                font-size: nth($font-size, 3);
-                width: 530px;
-            }
-            li{
-                list-style: none;
-                padding-top: 54px;
-                padding-left: 50px;
-            }
+                h2{
+                    font-size: nth($font-size, 6);
+                    width: 600px;
+                }
+                p{
+                    font-size: nth($font-size, 3);
+                    width: 530px;
+                }
+                li{
+                    list-style: none;
+                    padding-top: 54px;
+                    padding-left: 50px;
+                }
         }   
     }
 
@@ -45,7 +45,7 @@
 
 .hero_contacto{
     h2{
-        font-size: nth($font-size, 3);
+        font-size: nth($font-size, 5);
     }
 }
 
@@ -108,6 +108,28 @@
     /*------contacto------*/
     /*------conocenos------*/
     /*------Unete------*/
+    /*------Viajes------*/
+    .paquetes{
+        .paquetes_contenedor{
+            align-items:first baseline;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            padding: 30px;
+            grid-template-areas:
+                "card1 card2"
+                "card3 card3";
+        }
+        .hoteles{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            padding: 30px;
+            grid-template-areas:
+                "card4 card5"
+                "card6 card6";
+        }
+    }
 }
 
 
@@ -131,7 +153,7 @@
 
 
     .personal{
-        h2{
+        h3{
             padding: 20px;
             text-align: center;
             font-family:Merriweather Sans, sans-serif;
@@ -153,12 +175,12 @@
     /*------conocenos------*/
 
     .hero_conocenos{
-        p{
+        h4{
             font-weight: 300;
             font-size: nth($font-size, 4);
             width: 630px;
         }
-        h4{
+        p{
             font-weight: 500;
             font-size: nth($font-size, 6);
 
@@ -269,7 +291,7 @@
                     }
                 }
             }
-            div{
+            .archivos{
                 div{
                     input{
                         border: $color-tercero;
@@ -281,6 +303,24 @@
                 }
             }
         }
+    }
+    /*------viaje------*/
+    .hero_vacaciones{
+        h2{
+            font-size:nth($font-size, 7);
+            color: $titulos-hero;
+            width: 650px;
+            text-align: center
+        }
+    }
+    .paquetes{
+        h3{
+            width: 650px;
+        }
+        h3{
+            width: 650px;
+        }
+        
     }
     
 }
@@ -441,29 +481,23 @@
             }
             
         }
-        .derechos{
-            font-family:Merriweather Sans, sans-serif ;
-            text-align: center;
-            font-size: nth($font-size, 1);
-            color: $color-tercero;
-        }
     }
 
     .hero{
-        background-image: url(../img/fondo10.jpg);
+        background-image: url(../img/fondo11.jpg);
         background-size:cover;
         background-repeat: no-repeat;
         background-position: right ;
-        height: 90vh;
-        background-attachment:scroll;
+        height: 91vh;
+        background-attachment:fixed;
         background-color: black;
         .hero_flex_contenedor{
             .hero_fraseuno{
-                width: 400px;
+                width: 320px;
             }
             .hero_frasedos{
                 font-size: nth($font-size, 3);
-                width: 400px;
+                width: 320px;
             }
             li{
                 list-style: none;
@@ -581,17 +615,10 @@
             }
             
         }
-        .derechos{
-            padding-left:  0px;
-            font-family:Merriweather Sans, sans-serif ;
-            text-align: center;
-            font-size: nth($font-size, 1);
-            color: $color-tercero;
-        }
     }
 
     .personal{
-        h2{
+        h3{
             padding: 20px;
             text-align: center;
             font-family:Merriweather Sans, sans-serif;
@@ -622,7 +649,7 @@
             .formulario_unete{
                 padding: 4px;
             }
-            div{
+            .archivos{
                 padding: 4px;
             }
         }
@@ -648,12 +675,12 @@
     }
 
     .hero{
-        background-image: url(../img/fondo10.jpg);
+        background-image: url(../img/fondo11.jpg);
         background-size:cover;
         background-repeat: no-repeat;
-        background-position: left ;
-        height: 90vh;
-        background-attachment:scroll;
+        background-position: right ;
+        height: 92vh;
+        background-attachment:fixed;
         background-color: black;
         .hero_flex_contenedor{
             color: $color-tercero;
@@ -663,7 +690,7 @@
             justify-content: center;
             align-items: center;
             padding: 50px;
-            height: 90vh;
+            height: 91vh;
             .hero_fraseuno{
                 font-size: nth($font-size, 6);
                 width: 480px;
@@ -729,12 +756,12 @@
         }
     }
     .hero_conocenos{
-        p{
+        h4{
             font-weight: 300;
             font-size: nth($font-size, 3);
             width: 530px;
         }
-        h4{
+        p{
             font-weight: 500;
             font-size: nth($font-size, 6);
 
@@ -743,13 +770,61 @@
     }
 
     /*------Unete------*/
+    /*------viaje------*/
+    .hero_vacaciones{
+        background-image: url(../img/viajes.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: right ;
+        h2{
+            font-size:nth($font-size, 7);
+            color: $titulos-hero;
+            width: 500px;
+            text-align: center
+        }
+    }
+    .paquetes{
+        h3{
+            padding: 5px;
+            text-align: center;
+            font-family:Merriweather Sans, sans-serif;
+            width: 500px;
+            font-size: nth($font-size, 5);
+        }
+        .paquetes_contenedor{
+            align-items:first baseline;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            padding: 5px;
+            grid-template-areas:
+                "card1 card2"
+                "card3 card3";
+        }
+        h3{
+            padding: 5px;
+            text-align: center;
+            font-family:Merriweather Sans, sans-serif;
+            width: 500px;
+            font-size: nth($font-size, 5);
+        }
+        .hoteles{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            padding: 5px;
+            grid-template-areas:
+                "card4 card5"
+                "card6 card6";
+        }
+    }
 
 }
 
 
 @media screen and (max-width: 600px) {
     .personal{
-        h2{
+        h3{
             padding: 20px;
             text-align: center;
             font-family:Merriweather Sans, sans-serif;
@@ -822,12 +897,12 @@
     }
 
     .hero_conocenos{
-        p{
+        h4{
             font-weight: 300;
             font-size: nth($font-size, 4);
             width: 430px;
         }
-        h4{
+        p{
             font-weight: 500;
             font-size: nth($font-size, 5);
 
@@ -860,6 +935,38 @@
                 justify-content: space-evenly;
                 padding: 20px;
             }
+        }
+    }
+    /*------Viajes------*/
+    .hero_vacaciones{
+        h2{
+            font-size:nth($font-size, 5);
+            color: $titulos-hero;
+            width: 500px;
+            text-align: center
+        }
+    }
+    .paquetes{
+        .paquetes_contenedor{
+            align-items:first baseline;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+            padding: 30px;
+            grid-template-areas:
+                "card1"
+                "card2"
+                "card3";
+        }
+        .hoteles{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+            padding: 30px;
+            grid-template-areas:
+                "card4"
+                "card5"
+                "card6";
         }
     }
 }
@@ -976,12 +1083,12 @@
 
     /*------conocenos------*/
     .hero_conocenos{
-        p{
+        h4{
             font-weight: 400;
             font-size: nth($font-size, 2);
             width: 330px;
         }
-        h4{
+        p{
             font-weight: 500;
             font-size: nth($font-size, 5);
 
@@ -1015,6 +1122,26 @@
         h2{
             font-size: nth($font-size, 5);
         }
+    }
+    /*------Viajes------*/
+    .hero_vacaciones{
+        h2{
+            font-size:nth($font-size, 5);
+            color: $titulos-hero;
+            width: 350px;
+            text-align: center
+        }
+    }
+    .paquetes{
+        h3{
+            font-size:nth($font-size, 4);
+            width: 350px;
+        }
+        h3{
+            font-size:nth($font-size, 4);
+            width: 350px;
+        }
+        
     }
 }
 
@@ -1114,12 +1241,6 @@
             }
             
         }
-        .derechos{
-            font-family:Merriweather Sans, sans-serif ;
-            text-align: center;
-            font-size: nth($font-size, 2);
-            color: $color-tercero;
-        }
     }
 
     .personal{
@@ -1215,6 +1336,9 @@
     /*------contacto------*/
 
     .contacto_contenido{
+        .contacto_contenido_arriba{
+            padding: 30px;
+        }
         .contacto_contenido_formulario{
             .contenido_formulario{
                 div{
@@ -1226,6 +1350,7 @@
             }
         }
     }
+
 
     /*------conocenos------*/
     /*------Unete------*/
@@ -1240,7 +1365,33 @@
                 }
             }
         }
+    /*------Viaje------*/
+        .hero_vacaciones{
+            h2{
+                width: 300px;
+            }
+        }
+        .paquetes{
+            .paquetes_contenedor{
+                
+                padding: 15px;
+            }
+            h3{
+                font-size:nth($font-size, 4);
+                width: 300px;
+            }
+            h3{
+                font-size:nth($font-size, 4);
+                width: 300px;
+            }
+            .hoteles{
+                padding: 15px;
+            }
+        }
+        
 }
+
+
 
 
 @media screen and (max-width: 400px) {
@@ -1290,7 +1441,7 @@
     }
 
     .personal{
-        h2{
+        h3{
             padding: 0px;
             text-align: center;
             font-family:Merriweather Sans, sans-serif;
@@ -1362,12 +1513,12 @@
     /*------conocenos------*/
 
     .hero_conocenos{
-        p{
+        h4{
             font-weight: 400;
             font-size: nth($font-size, 2);
             width: 230px;
         }
-        h4{
+        p{
             font-weight: 500;
             font-size: nth($font-size, 4);
 
@@ -1419,7 +1570,7 @@
                                 border-radius: 5px;
                                 padding: 10px;
                                 height: 30px;
-                                width: 180px;
+                                width: 140px;
     
                             }
                         }
@@ -1507,36 +1658,37 @@
     }
     /*------conocenos------*/
     /*------Unete------*/
-    .contenido_unete{
-        .unete_contenedor{
-            h3{
-                color: $color-tercero;
-                width: 276px;
-                text-align: center;
-                padding: 10px;
-                font-size: nth($font-size, 3);
-            }
-            .formulario_unete{
-                .for-1{
-                    .nyp{
-                        div{
-                            input{
-                                width: 110px;
+        .contenido_unete{
+            .unete_contenedor{
+                h3{
+                    color: $color-tercero;
+                    width: 276px;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: nth($font-size, 3);
+                }
+                .formulario_unete{
+                    .for-1{
+                        .nyp{
+                            div{
+                                input{
+                                    width: 110px;
+                                }
                             }
                         }
-                    }
-                    .naciemiento{
-                        .año{
-                            input{
-                                width: 95px;
+                        .naciemiento{
+                            .año{
+                                input{
+                                    width: 95px;
+                                }
                             }
                         }
-                    }
-                    .especie_sexo{
-                        div{
-                            select{
-                                width: 100px;
+                        .especie_sexo{
+                            div{
+                                select{
+                                    width: 100px;
 
+                                }
                             }
                         }
                     }
@@ -1544,5 +1696,5 @@
             }
         }
     }
-}
+
 
